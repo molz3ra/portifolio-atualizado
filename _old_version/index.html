@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Lucas Mol - Desenvolvedor Web">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Lucas Mol | Portfólio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <canvas id="falling-pattern"></canvas>
+            <div class="hero-content">
+                <img src="imgs/foto-perfil.jpg" alt="Lucas Mol" class="profile-photo">
+                <h1>Lucas Mol</h1>
+            <p class="subtitle">Engenheiro de Software com Foco em Produto & Estrategista de Growth</p>
+            <div class="bio">
+                <p>Estudante de Sistemas de Informação na FIAP e desenvolvedor com mentalidade multidisciplinar. Meu objetivo é transformar desafios técnicos complexos em produtos digitais escaláveis, unindo Engenharia de Software, Design de Interface e Estratégias de Growth.</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/molz3ra" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/mol035" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://instagram.com/ei_mol" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <h3>Arquitetura & Construção</h3>
+                    <p>Especialista no ecossistema JavaScript (React, Next.js, Node.js) e Java/Spring Boot. Foco em Clean Code e princípios S.O.L.I.D.</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Design & Experiência</h3>
+                    <p>Background sólido em Design Gráfico (Adobe Suite) e UI/UX (Figma), alinhando performance técnica com experiência visual impactante.</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Dados & Inteligência</h3>
+                    <p>Uso Python, SQL e Power BI para análise de KPIs e ciência de dados, com experiência em Machine Learning para predição de mercado.</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Growth & Escala</h3>
+                    <p>Domínio de Tráfego Pago e Growth Hacking para validar e escalar produtos digitais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos em Destaque</h2>
+            <div class="projects-grid">
+                <!-- FarmFresh 2.0 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-date">Mai 2026 - Presente</span>
+                        <h3>FarmFresh 2.0 🛒</h3>
+                    </div>
+                    <p>Plataforma para pequenos produtores com checkout direto no WhatsApp. Foco em experiência premium e sem fricção.</p>
+                    <div class="tech-stack">
+                        <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Context API</span>
+                    </div>
+                    <a href="https://github.com/molz3ra" target="_blank" class="project-link">Ver Repositório →</a>
+                </div>
+
+                <!-- Suite Performance -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-date">Jan 2026</span>
+                        <h3>Suite Performance 📊</h3>
+                    </div>
+                    <p>SaaS para gestores de tráfego auditarem landing pages e projetarem ROI/CPA de forma visual e técnica.</p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Marketing Intelligence</span><span>SaaS</span>
+                    </div>
+                    <a href="https://github.com/molz3ra/SuitePerformance" target="_blank" class="project-link">Ver Repositório →</a>
+                </div>
+
+                <!-- GripVid -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-date">Mai 2026</span>
+                        <h3>GripVid 🎬</h3>
+                    </div>
+                    <p>Downloader universal de alta qualidade para redes sociais. Arquitetura assíncrona com processamento de mídia via FFmpeg.</p>
+                    <div class="tech-stack">
+                        <span>FastAPI</span><span>Python</span><span>Next.js</span><span>yt-dlp</span>
+                    </div>
+                    <a href="https://github.com/molz3ra/GripVid" target="_blank" class="project-link">Ver Repositório →</a>
+                </div>
+
+                <!-- A Chapa Burger -->
+                <div class="project-card">
+                    <h3>A Chapa Burger 🍔</h3>
+                    <p>App de delivery com gestão de pedidos complexos e animações fluidas (Framer Motion). Integração com API do WhatsApp.</p>
+                    <div class="tech-stack">
+                        <span>React</span><span>Framer Motion</span><span>UX/UI</span>
+                    </div>
+                    <a href="https://github.com/molz3ra/ACHAPABURGER" target="_blank" class="project-link">Ver Repositório →</a>
+                </div>
+
+                <!-- AuditFlow -->
+                <div class="project-card">
+                    <h3>AuditFlow 🔍</h3>
+                    <p>Ferramenta de auditoria técnica (SEO/Core Web Vitals) e captura de leads com geração de relatórios PDF automatizados.</p>
+                    <div class="tech-stack">
+                        <span>Web Vitals API</span><span>Node.js</span><span>PDF Gen</span>
+                    </div>
+                    <a href="https://github.com/molz3ra/AuditFlow" target="_blank" class="project-link">Ver Repositório →</a>
+                </div>
+
+                <!-- SynapseQuant -->
+                <div class="project-card">
+                    <h3>SynapseQuant 🧠</h3>
+                    <p>Trading quantitativo com Machine Learning (XGBoost). Pipeline de dados completo com APIs da Binance e backtesting.</p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>XGBoost</span><span>Pandas</span><span>Finanças</span>
+                    </div>
+                    <a href="https://github.com/molz3ra/EigenTrade" target="_blank" class="project-link">Ver Repositório →</a>
+                </div>
+
+                <!-- OEE Industrial Simulator -->
+                <div class="project-card">
+                    <h3>Simulador OEE ⚙️</h3>
+                    <p>Aplicação Full Stack para Indústria 4.0. Monitoramento de eficiência industrial em tempo real com dashboards reativos.</p>
+                    <div class="tech-stack">
+                        <span>Node.js</span><span>JavaScript</span><span>Dashboards</span>
+                    </div>
+                    <a href="https://github.com/molz3ra/OEEIndustrialSimulator" target="_blank" class="project-link">Ver Repositório →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencias">
+            <h2>Experiências</h2>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>💼 Freelancer - Desenvolvimento Full Stack</h3>
+                    <span class="exp-time">Desde 2024 - Presente</span>
+                </div>
+                <p>Desenvolvimento de aplicações web completas (Front-end e Back-end) para diversos clientes. Expertise em arquitetura de sistemas, otimização de performance e entrega de soluções escaláveis. Experiência em:</p>
+                <ul>
+                    <li>Desenvolvimento de plataformas e SaaS</li>
+                    <li>APIs REST com Node.js e Python</li>
+                    <li>Interfaces responsivas com React/Next.js</li>
+                    <li>Integração com serviços externos (WhatsApp, APIs de pagamento)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação e Certificados</h2>
+            <div class="certificates-grid">
+                <div class="cert-item">
+                    <span class="cert-icon">🎓</span>
+                    <h3>FIAP</h3>
+                    <p>Estudante de Sistemas de Informação</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🌐</span>
+                    <h3>Responsive Web Development</h3>
+                    <p>FIAP - mai 2026</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🎨</span>
+                    <h3>Curso de Front End</h3>
+                    <p>FIAP</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🔒</span>
+                    <h3>Cybersecurity Hacker Skills</h3>
+                    <p>FIAP - 120h | nov 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🎯</span>
+                    <h3>Leadership Communication</h3>
+                    <p>FIAP - mar 2026</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">👨‍💼</span>
+                    <h3>Leadership & Corporate Accountability</h3>
+                    <p>FIAP - mar 2026</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">☁️</span>
+                    <h3>Certificado AWS</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🐍</span>
+                    <h3>Python: Do Básico ao Avançado</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">☕</span>
+                    <h3>Curso Java COMPLETO</h3>
+                    <p>Udemy - dez 2025 | 54h</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🗄️</span>
+                    <h3>SQL: Do Zero ao Avançado</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">📊</span>
+                    <h3>Power BI: Do Básico ao Avançado</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">📈</span>
+                    <h3>Excel: Do Básico ao Avançado</h3>
+                    <p>Udemy - set 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🎨</span>
+                    <h3>Design Gráfico</h3>
+                    <p>FIAP - nov 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🎨</span>
+                    <h3>Pro Figma | UI Design</h3>
+                    <p>Udemy - nov 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">📐</span>
+                    <h3>Especialista em AutoCAD</h3>
+                    <p>Udemy - dez 2025 | 43.5h</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">🖼️</span>
+                    <h3>Adobe Photoshop Certificado</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✏️</span>
+                    <h3>Adobe InDesign Certificado</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">📱</span>
+                    <h3>WordPress Design Profissional</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">💰</span>
+                    <h3>Tráfego Pago (6 Certificados)</h3>
+                    <p>Alura - Google, Facebook, LinkedIn, TikTok, Twitter Ads + Growth Hacking</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">👥</span>
+                    <h3>Fast MBA Lead - Liderança</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">💬</span>
+                    <h3>Liderança e Gestão de Pessoas</h3>
+                    <p>Udemy - out 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades e Competências</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>💻 Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Responsive Web</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>⚙️ Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">APIs REST</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🎨 Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Adobe Photoshop</span>
+                        <span class="skill-tag">Adobe Illustrator</span>
+                        <span class="skill-tag">Adobe InDesign</span>
+                        <span class="skill-tag">Web Design</span>
+                        <span class="skill-tag">Branding</span>
+                        <span class="skill-tag">Canva</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>📊 Data & BI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Excel Avançado</span>
+                        <span class="skill-tag">DAX</span>
+                        <span class="skill-tag">ETL</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🚀 Growth & Marketing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Google Ads</span>
+                        <span class="skill-tag">Facebook Ads</span>
+                        <span class="skill-tag">LinkedIn Ads</span>
+                        <span class="skill-tag">TikTok Ads</span>
+                        <span class="skill-tag">Growth Hacking</span>
+                        <span class="skill-tag">Tráfego Pago</span>
+                        <span class="skill-tag">Análise de Dados</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>👥 Liderança & Gestão</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Liderança</span>
+                        <span class="skill-tag">Gestão de Pessoas</span>
+                        <span class="skill-tag">Comunicação Efetiva</span>
+                        <span class="skill-tag">Feedback</span>
+                        <span class="skill-tag">Metodologias Ágeis</span>
+                        <span class="skill-tag">Scrum</span>
+                        <span class="skill-tag">OKR</span>
+                        <span class="skill-tag">KPIs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="contact-grid">
+                <a href="mailto:lucasmolrodrigues2003@gmail.com" class="contact-item">
+                    <span class="icon">✉️</span>
+                    <div>
+                        <span>Email</span>
+                        <p>lucasmolrodrigues2003@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/5535999789761" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <span class="icon">💬</span>
+                    <div>
+                        <span>WhatsApp</span>
+                        <p>+55 (35) 9 9978-9761</p>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/mol035" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <span class="icon">🔗</span>
+                    <div>
+                        <span>LinkedIn</span>
+                        <p>linkedin.com/in/mol035</p>
+                    </div>
+                </a>
+                <a href="https://github.com/molz3ra" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <span class="icon">💻</span>
+                    <div>
+                        <span>GitHub</span>
+                        <p>github.com/molz3ra</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lucas Mol. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
