@@ -6,16 +6,16 @@ import { projectsData } from "@/data/portfolio-data";
 import BentoCard from "@/components/BentoGrid/BentoCard";
 import Footer from "@/components/Footer";
 
-const ExternalLinkIcon = ({ size = 20 }: { size?: number }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+const ExternalLinkIcon = ({ size = 20, className = "" }: { size?: number, className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 );
 
-const GithubIcon = ({ size = 20 }: { size?: number }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.03c3.18-.34 6.52-1.6 6.52-7.09 0-1.6-.5-2.9-1.4-3.92.1-.28.6-1.84-.1-3.92 0 0-1.2-.38-3.9 1.45a13.3 13.3 0 0 0-7 0c-2.7-1.83-3.9-1.45-3.9-1.45-.7 2.08-.2 3.64-.1 3.92-.9 1.02-1.4 2.32-1.4 3.92 0 5.49 3.34 6.75 6.52 7.09-.8.7-1.1 1.9-1.1 3.03v4"></path></svg>
+const GithubIcon = ({ size = 20, className = "" }: { size?: number, className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.03c3.18-.34 6.52-1.6 6.52-7.09 0-1.6-.5-2.9-1.4-3.92.1-.28.6-1.84-.1-3.92 0 0-1.2-.38-3.9 1.45a13.3 13.3 0 0 0-7 0c-2.7-1.83-3.9-1.45-3.9-1.45-.7 2.08-.2 3.64-.1 3.92-.9 1.02-1.4 2.32-1.4 3.92 0 5.49 3.34 6.75 6.52 7.09-.8.7-1.1 1.9-1.1 3.03v4"></path></svg>
 );
 
-const CheckCircleIcon = ({ size = 16 }: { size?: number }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+const CheckCircleIcon = ({ size = 16, className = "" }: { size?: number, className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
 );
 
 export default function ProjetosPage() {
