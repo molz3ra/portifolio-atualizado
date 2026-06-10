@@ -1,80 +1,62 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 const navItems = [
-  { name: "Projetos", href: "#projetos" },
-  { name: "Experiências", href: "#experiencias" },
-  { name: "Formação", href: "#formacao" },
-  { name: "Habilidades", href: "#habilidades" },
-  { name: "Contato", href: "#contato" },
+  { name: "Home", href: "/" },
+  { name: "Projetos", href: "/projetos" }
 ];
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-
-      // Scroll spy logic
-      const sections = navItems.map((item) => item.href.substring(1));
-      let current = "";
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 150 && rect.bottom >= 150) {
-            current = section;
-          }
-        }
-      }
-      if (current) setActiveSection(current);
+      setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "glass-panel py-4 shadow-[0_2px_10px_rgba(0,0,0,0.5)]" : "bg-transparent py-6"
+        scrolled ? "bg-black/80 backdrop-blur-md border-b border-white/10 py-4 shadow-lg" : "bg-transparent py-6"
       }`}
     >
-      <nav className="container mx-auto px-4 flex justify-center">
-        <ul className="flex items-center gap-4 sm:gap-8 flex-wrap justify-center">
+      <nav className="container mx-auto px-4 flex justify-between items-center max-w-7xl">
+        <Link href="/" className="text-xl font-bold text-white tracking-tighter flex items-center gap-2 group">
+          <div className="w-8 h-8 bg-[var(--color-primary)]/20 rounded-lg flex items-center justify-center border border-[var(--color-primary)]/50 group-hover:bg-[var(--color-primary)] transition-colors">
+            <span className="text-[var(--color-primary)] group-hover:text-black font-black leading-none">M</span>
+          </div>
+          Molzera
+        </Link>
+        <ul className="flex items-center gap-2 sm:gap-6 bg-black/40 backdrop-blur-sm border border-white/10 px-4 py-2 rounded-full">
           {navItems.map((item) => {
-            const isActive = activeSection === item.href.substring(1);
+            const isActive = pathname === item.href;
             return (
               <li key={item.name} className="relative">
-                <a
+                <Link
                   href={item.href}
-                  onClick={(e) => handleClick(e, item.href)}
-                  className={`text-sm sm:text-base font-semibold transition-colors px-2 py-1 ${
-                    isActive ? "text-[var(--color-primary)]" : "text-[#e3e2e2] hover:text-[var(--color-primary)]"
+                  className={`text-sm font-medium transition-colors px-4 py-2 rounded-full block ${
+                    isActive ? "text-black" : "text-[var(--color-secondary-text)] hover:text-white"
                   }`}
                 >
+                  {isActive && (
+                    <motion.div
+                      layoutId="active-nav-bg"
+                      className="absolute inset-0 bg-[var(--color-primary)] rounded-full -z-10"
+                      initial={false}
+                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    />
+                  )}
                   {item.name}
-                </a>
-                {isActive && (
-                  <motion.div
-                    layoutId="active-indicator"
-                    className="absolute -bottom-1 left-0 w-full h-[2px] bg-[var(--color-primary)]"
-                    initial={false}
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  />
-                )}
+                </Link>
               </li>
             );
           })}

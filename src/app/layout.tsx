@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description: "Portfólio de Lucas Mol - Desenvolvedor Web",
 };
 
+import ClientBackground from "@/components/ClientBackground";
+import Header from "@/components/Header";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,6 +23,12 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={`${inter.variable} antialiased scroll-smooth`}>
       <body className="bg-black text-[#e3e2e2] font-sans min-h-screen flex flex-col">
+        {/* Mantém o Canvas 3D vivo durante navegações de página (Não será desmontado) */}
+        <ClientBackground />
+        
+        {/* Mantém o Header no nível raiz da aplicação */}
+        <Header />
+        
         {children}
       </body>
     </html>

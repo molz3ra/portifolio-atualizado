@@ -1,25 +1,19 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Sobre from "@/components/Sobre";
-import Projetos from "@/components/Projetos";
-import Experiencias from "@/components/Experiencias";
-import Formacao from "@/components/Formacao";
-import Habilidades from "@/components/Habilidades";
-import Contato from "@/components/Contato";
-import Footer from "@/components/Footer";
+"use client";
+
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+// Dynamically import heavy components
+const BentoGrid = dynamic(() => import("@/components/BentoGrid/BentoGrid"), { ssr: true });
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: true });
 
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="flex-grow">
-        <Hero />
-        <Sobre />
-        <Projetos />
-        <Experiencias />
-        <Formacao />
-        <Habilidades />
-        <Contato />
+        <Suspense fallback={<div className="h-screen w-full flex items-center justify-center text-[var(--color-primary)]">Loading...</div>}>
+          <BentoGrid />
+        </Suspense>
       </main>
       <Footer />
     </>
