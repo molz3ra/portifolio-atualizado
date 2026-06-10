@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Geist } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,6 +14,10 @@ export const metadata: Metadata = {
 
 import ClientBackground from "@/components/ClientBackground";
 import Header from "@/components/Header";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
 
 export default function RootLayout({
   children,
@@ -21,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={`${inter.variable} antialiased scroll-smooth`}>
+    <html lang="pt-br" className={cn("antialiased", "scroll-smooth", inter.variable, "font-sans", geist.variable)}>
       <body className="bg-black text-[#e3e2e2] font-sans min-h-screen flex flex-col">
         {/* Mantém o Canvas 3D vivo durante navegações de página (Não será desmontado) */}
         <ClientBackground />

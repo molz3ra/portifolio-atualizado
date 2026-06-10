@@ -13,15 +13,25 @@ export default function BentoCard({ children, className = "", delay = 0 }: Bento
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleMouseMove = (e: MouseEvent) => {
       if (!cardRef.current) return;
       
-      const rect = cardRef.current.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      cardRef.current.style.setProperty("--mouse-x", `${x}px`);
-      cardRef.current.style.setProperty("--mouse-y", `${y}px`);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (cardRef.current) {
+            const rect = cardRef.current.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            cardRef.current.style.setProperty("--mouse-x", `${x}px`);
+            cardRef.current.style.setProperty("--mouse-y", `${y}px`);
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     const card = cardRef.current;

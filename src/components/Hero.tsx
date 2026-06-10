@@ -55,7 +55,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-xl sm:text-2xl font-semibold text-[var(--color-primary-hover)] mb-8 max-w-2xl"
         >
-          Engenheiro de Software com Foco em Produto & Estrategista de Growth
+          Desenvolvedor Full Stack · React · Next.js · Node.js · Java
         </motion.h2>
 
         <motion.div
@@ -65,10 +65,7 @@ export default function Hero() {
           className="max-w-3xl text-base sm:text-lg text-[#e3e2e2] leading-relaxed mb-10"
         >
           <p>
-            Estudante de Sistemas de Informação na FIAP e desenvolvedor com mentalidade
-            multidisciplinar. Meu objetivo é transformar desafios técnicos complexos em produtos
-            digitais escaláveis, unindo Engenharia de Software, Design de Interface e
-            Estratégias de Growth.
+            Desenvolvo aplicações web completas — do banco de dados ao clique do usuário. Stack principal: React, Next.js, Node.js e Java. Visão de produto, dados e UI/UX em um único perfil. Buscando minha primeira oportunidade formal como Dev Full Stack
           </p>
         </motion.div>
 

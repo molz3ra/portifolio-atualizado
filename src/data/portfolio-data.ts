@@ -2,8 +2,8 @@
 
 export const siteData = {
   name: "Lucas Mol",
-  role: "Engenheiro de Software com Foco em Produto & Estrategista de Growth",
-  description: "Estudante de Sistemas de Informação na FIAP e desenvolvedor com mentalidade multidisciplinar. Meu objetivo é transformar desafios técnicos complexos em produtos digitais escaláveis, unindo Engenharia de Software, Design de Interface e Estratégias de Growth.",
+  role: "Desenvolvedor Full Stack · React · Next.js · Node.js · Java",
+  description: "Desenvolvo aplicações web completas — do banco de dados ao clique do usuário. Stack principal: React, Next.js, Node.js e Java. Visão de produto, dados e UI/UX em um único perfil. Buscando minha primeira oportunidade formal como Dev Full Stack",
   social: {
     github: "https://github.com/molz3ra",
     linkedin: "https://linkedin.com/in/mol035",
