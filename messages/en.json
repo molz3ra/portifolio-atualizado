@@ -1,0 +1,75 @@
+{
+  "Header": {
+    "home": "Home",
+    "projetos": "Projects"
+  },
+  "Home": {
+    "disponivel": "Available for Projects",
+    "role": "Full Stack Developer · React · Next.js · Node.js · Java",
+    "description": "I develop complete web applications — from the database to the user's click. Main stack: React, Next.js, Node.js, and Java. Product, data, and UI/UX vision in a single profile. Seeking my first formal opportunity as a Full Stack Dev.",
+    "engenharia": "Software Engineering",
+    "multidisciplinares": "Multidisciplinary Skills",
+    "projetos_destaque": "Featured Projects",
+    "ver_todos": "View all →",
+    "contribuicoes_github": "GitHub Contributions",
+    "footer_rights": "All rights reserved."
+  },
+  "Skills": {
+    "frontend": "💻 Frontend",
+    "backend": "⚙️ Backend",
+    "design": "🎨 Design",
+    "data": "📊 Data & BI",
+    "growth": "🚀 Growth & Marketing",
+    "lideranca": "👥 Leadership & Management"
+  },
+  "Projetos": {
+    "titulo": "Featured",
+    "titulo_destaque": "Projects",
+    "subtitulo": "Real-world cases where I applied Software Engineering, UI/UX and Growth Strategies to solve complex problems.",
+    "features_titulo": "Key Features",
+    "live_demo": "Live Demo",
+    "repositorio": "Repository",
+    "projects": {
+      "madlab": {
+        "pitch": "A full e-commerce focused on high performance, immersive UI/UX and Streetwear aesthetics.",
+        "description": "Designed to deliver a native app feel directly in the browser. Features complex state management for the cart, Server-Side Rendering (SSR) and micro-interactions.",
+        "features": {
+          "f1": "Real-time Slide-over Cart",
+          "f2": "Dynamic Pages (/product/[id]) via SSR",
+          "f3": "Smooth Transitions (Framer Motion)",
+          "f4": "Visual Recommendation System"
+        }
+      },
+      "suite": {
+        "pitch": "A modern SaaS platform for auditing Landing Pages and projecting financial results (ROI/CPA).",
+        "description": "Combines Full-stack development with marketing intelligence. Performs URL web scraping to generate a real-time CRO diagnostic, plus simulates financial projections in an interactive dashboard.",
+        "features": {
+          "f1": "CRO Auditor via Web Scraping (Cheerio)",
+          "f2": "Pixel Detection and CTA Analysis",
+          "f3": "ROI & Goals Simulator with Recharts",
+          "f4": "Dark Mode & Optimized UX"
+        }
+      },
+      "farmfresh": {
+        "pitch": "Connecting consumers to the best local producers with technology and simplicity.",
+        "description": "A marketplace focused on rural and artisan producers. Features dynamic filters, exclusive profile routes and the perfect business solution: checkout integrated directly via WhatsApp.",
+        "features": {
+          "f1": "Dynamic Showcase & Real-Time Search",
+          "f2": "Exclusive Producer Profiles",
+          "f3": "Global State Management via React Context",
+          "f4": "Integrated WhatsApp Checkout"
+        }
+      },
+      "instagram": {
+        "pitch": "A high-fidelity replica of Instagram's interface and flow for the Web.",
+        "description": "A reproduction focused on Pixel Perfect and mobile-first responsiveness, studying the original app's usability to improve the construction of reusable React components.",
+        "features": {
+          "f1": "Responsive Post Feed",
+          "f2": "Dynamic Stories Viewer",
+          "f3": "Navigation System (Bottom Bar)",
+          "f4": "Pixel Perfect UI"
+        }
+      }
+    }
+  }
+}

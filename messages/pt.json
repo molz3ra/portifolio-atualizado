@@ -1,0 +1,75 @@
+{
+  "Header": {
+    "home": "Home",
+    "projetos": "Projetos"
+  },
+  "Home": {
+    "disponivel": "Disponível para Projetos",
+    "role": "Desenvolvedor Full Stack · React · Next.js · Node.js · Java",
+    "description": "Desenvolvo aplicações web completas — do banco de dados ao clique do usuário. Stack principal: React, Next.js, Node.js e Java. Visão de produto, dados e UI/UX em um único perfil. Buscando minha primeira oportunidade formal como Dev Full Stack",
+    "engenharia": "Engenharia de Software",
+    "multidisciplinares": "Habilidades Multidisciplinares",
+    "projetos_destaque": "Projetos em Destaque",
+    "ver_todos": "Ver todos →",
+    "contribuicoes_github": "Contribuições no GitHub",
+    "footer_rights": "Todos os direitos reservados."
+  },
+  "Skills": {
+    "frontend": "💻 Frontend",
+    "backend": "⚙️ Backend",
+    "design": "🎨 Design",
+    "data": "📊 Data & BI",
+    "growth": "🚀 Growth & Marketing",
+    "lideranca": "👥 Liderança & Gestão"
+  },
+  "Projetos": {
+    "titulo": "Projetos em",
+    "titulo_destaque": "Destaque",
+    "subtitulo": "Cases reais onde apliquei Engenharia de Software, UI/UX e Estratégias de Growth para resolver problemas complexos.",
+    "features_titulo": "Principais Features",
+    "live_demo": "Live Demo",
+    "repositorio": "Repositório",
+    "projects": {
+      "madlab": {
+        "pitch": "Um e-commerce completo focado em alta performance, UI/UX imersiva e estética Streetwear.",
+        "description": "Desenhado para oferecer a sensação de um aplicativo nativo diretamente no navegador. Conta com gerenciamento de estado complexo para carrinho, Server-Side Rendering (SSR) e micro-interações.",
+        "features": {
+          "f1": "Carrinho Slide-over em tempo real",
+          "f2": "Páginas Dinâmicas (/produto/[id]) via SSR",
+          "f3": "Transições Suaves (Framer Motion)",
+          "f4": "Sistema de Recomendação Visual"
+        }
+      },
+      "suite": {
+        "pitch": "Plataforma SaaS moderna para auditar Landing Pages e projetar resultados financeiros (ROI/CPA).",
+        "description": "Une desenvolvimento Full-stack com inteligência de marketing. Realiza web scraping de URLs para gerar um diagnóstico de CRO em tempo real, além de simular projeções financeiras em um dashboard interativo.",
+        "features": {
+          "f1": "Auditor CRO via Web Scraping (Cheerio)",
+          "f2": "Detecção de Pixel e Análise de CTAs",
+          "f3": "Simulador de ROI e Metas com Recharts",
+          "f4": "Dark Mode & UX Otimizada"
+        }
+      },
+      "farmfresh": {
+        "pitch": "Conectando consumidores aos melhores produtores locais com tecnologia e simplicidade.",
+        "description": "Um marketplace focado em produtores rurais e artesanais. Traz filtros dinâmicos, rotas exclusivas de perfis e a solução de negócios perfeita: checkout integrado diretamente via WhatsApp.",
+        "features": {
+          "f1": "Vitrine Dinâmica e Pesquisa em Tempo Real",
+          "f2": "Perfil Exclusivo para Produtores",
+          "f3": "Gerenciamento Global via React Context",
+          "f4": "Checkout via WhatsApp Integrado"
+        }
+      },
+      "instagram": {
+        "pitch": "Réplica de alta fidelidade da interface e fluxo do Instagram para Web.",
+        "description": "Uma reprodução focada em Pixel Perfect e responsividade mobile-first, estudando a usabilidade da aplicação original para aprimorar a construção de componentes React reutilizáveis.",
+        "features": {
+          "f1": "Feed de Postagens Responsivo",
+          "f2": "Visualização Dinâmica de Stories",
+          "f3": "Sistema de Navegação (Bottom Bar)",
+          "f4": "Pixel Perfect UI"
+        }
+      }
+    }
+  }
+}

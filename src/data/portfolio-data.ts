@@ -13,26 +13,32 @@ export const siteData = {
 
 export const skillsData = [
   {
+    key: "frontend",
     category: "💻 Frontend",
     skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "Bootstrap", "Responsive Web"],
   },
   {
+    key: "backend",
     category: "⚙️ Backend",
     skills: ["Node.js", "Python", "Java", "FastAPI", "Spring Boot", "SQL", "MySQL", "APIs REST"],
   },
   {
+    key: "design",
     category: "🎨 Design",
     skills: ["Figma", "UI/UX Design", "Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Web Design", "Branding", "Canva"],
   },
   {
+    key: "data",
     category: "📊 Data & BI",
     skills: ["Power BI", "Python", "Pandas", "SQL", "Excel Avançado", "DAX", "ETL", "Machine Learning"],
   },
   {
+    key: "growth",
     category: "🚀 Growth & Marketing",
     skills: ["Google Ads", "Facebook Ads", "LinkedIn Ads", "TikTok Ads", "Growth Hacking", "Tráfego Pago", "Análise de Dados"],
   },
   {
+    key: "lideranca",
     category: "👥 Liderança & Gestão",
     skills: ["Liderança", "Gestão de Pessoas", "Comunicação Efetiva", "Feedback", "Metodologias Ágeis", "Scrum", "OKR", "KPIs"],
   },
@@ -53,7 +59,7 @@ export const projectsData = [
     liveUrl: "https://lojavirtual-nu.vercel.app",
     repoUrl: "https://github.com/molz3ra/Loja-Virtual",
     color: "from-cyan-500 to-blue-600",
-    image: "/imgs/madlab.png"
+    image: "/imgs/madlab.webp"
   },
   {
     title: "Suite Performance",
@@ -85,7 +91,7 @@ export const projectsData = [
     liveUrl: "https://farm-fresh-2-0.vercel.app",
     repoUrl: "https://github.com/molz3ra/FarmFresh-2.0",
     color: "from-emerald-500 to-green-600",
-    image: "/imgs/farmfresh.png"
+    image: "/imgs/farmfresh.webp"
   },
   {
     title: "Instagram UI Clone",

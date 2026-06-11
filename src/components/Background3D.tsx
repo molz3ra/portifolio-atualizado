@@ -10,7 +10,7 @@ function ParticleMesh() {
   const { mouse, viewport } = useThree();
   
   // Create particles
-  const count = 2000;
+  const count = 800;
   const [positions, colors] = useMemo(() => {
     const pos = new Float32Array(count * 3);
     const cols = new Float32Array(count * 3);
@@ -76,7 +76,7 @@ export default function Background3D() {
   return (
     <div className="fixed top-0 left-0 w-full h-full pointer-events-none" style={{ zIndex: -2 }}>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-background)] opacity-60 z-10" />
-      <Canvas camera={{ position: [0, 0, 5], fov: 60 }} dpr={[1, 2]}>
+      <Canvas camera={{ position: [0, 0, 5], fov: 60 }} dpr={[1, 1.5]} performance={{ min: 0.5 }}>
         <ParticleMesh />
       </Canvas>
     </div>

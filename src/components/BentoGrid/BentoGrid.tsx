@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
 const GitHubCalendar = dynamic(() => import("react-github-calendar").then((mod) => mod.GitHubCalendar), { ssr: false });
 import BentoCard from "./BentoCard";
@@ -31,6 +32,8 @@ const SparklesIcon = ({ size = 24 }: { size?: number }) => (
 
 export default function BentoGrid() {
   const [activeSkillTab, setActiveSkillTab] = useState(2); // Inicia na aba de Design (índice 2 do array)
+  const tHome = useTranslations("Home");
+  const tSkills = useTranslations("Skills");
 
   // Separando Techs puras de Habilidades Multidisciplinares
   const techSkills = skillsData.slice(0, 2); // Frontend e Backend
@@ -48,6 +51,7 @@ export default function BentoGrid() {
                 src="/imgs/foto-perfil.jpg" 
                 alt={siteData.name} 
                 fill 
+                sizes="(max-width: 640px) 96px, 128px"
                 className="object-cover"
                 priority
               />
@@ -59,19 +63,19 @@ export default function BentoGrid() {
                 transition={{ duration: 1, delay: 0.2 }}
                 className="inline-block px-3 py-1 mb-2 text-xs font-semibold tracking-wider text-[var(--color-primary)] uppercase bg-[var(--color-primary)]/10 rounded-full border border-[var(--color-primary)]/20"
               >
-                Disponível para Projetos
+                {tHome('disponivel')}
               </motion.div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight text-glow mb-2">
                 {siteData.name}
               </h1>
               <h2 className="text-lg sm:text-xl text-[var(--color-secondary-text)] font-light">
-                {siteData.role}
+                {tHome('role')}
               </h2>
             </div>
           </div>
           
           <p className="text-[#cbd5e1] leading-relaxed max-w-2xl text-sm sm:text-base font-light">
-            {siteData.description}
+            {tHome('description')}
           </p>
           
           <div className="flex gap-4 mt-8 flex-wrap">
@@ -85,12 +89,12 @@ export default function BentoGrid() {
         <BentoCard className="md:col-span-1 row-span-2 flex flex-col" delay={0.2}>
           <div className="flex items-center gap-3 mb-6 text-[var(--color-primary)]">
             <CodeIcon size={24} />
-            <h3 className="text-xl font-bold text-white">Engenharia de Software</h3>
+            <h3 className="text-xl font-bold text-white">{tHome('engenharia')}</h3>
           </div>
           <div className="flex flex-col gap-6 flex-grow overflow-y-auto pr-2 custom-scrollbar">
             {techSkills.map((group, idx) => (
               <div key={idx}>
-                <h4 className="text-sm text-[var(--color-secondary-text)] mb-3">{group.category}</h4>
+                <h4 className="text-sm text-[var(--color-secondary-text)] mb-3">{tSkills(group.key as any)}</h4>
                 <div className="flex flex-wrap gap-2">
                   {group.skills.map((tech, i) => (
                     <span key={i} className="px-2.5 py-1 text-xs font-medium text-white/90 bg-white/5 border border-white/20 rounded-md hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors cursor-default">
@@ -107,7 +111,7 @@ export default function BentoGrid() {
         <BentoCard className="md:col-span-2 row-span-2" delay={0.3}>
           <div className="flex items-center gap-3 mb-6 text-[var(--color-primary)]">
             <SparklesIcon size={24} />
-            <h3 className="text-xl font-bold text-white">Habilidades Multidisciplinares</h3>
+            <h3 className="text-xl font-bold text-white">{tHome('multidisciplinares')}</h3>
           </div>
           
           <div className="flex flex-col h-full">
@@ -125,7 +129,7 @@ export default function BentoGrid() {
                         : 'bg-transparent text-[var(--color-secondary-text)] border border-transparent hover:text-white hover:bg-white/10 hover:border-white/20'
                     }`}
                   >
-                    {group.category}
+                    {tSkills(group.key as any)}
                   </button>
                 );
               })}
@@ -160,7 +164,7 @@ export default function BentoGrid() {
         <Link href="/projetos" className="md:col-span-1 row-span-2 outline-none">
           <BentoCard className="h-full relative group cursor-pointer overflow-hidden" delay={0.4}>
             <div className="flex justify-between items-start mb-6">
-              <h3 className="text-2xl font-bold text-white relative z-20">Projetos em Destaque</h3>
+              <h3 className="text-2xl font-bold text-white relative z-20">{tHome('projetos_destaque')}</h3>
               <div className="w-10 h-10 rounded-full bg-black/50 flex items-center justify-center border border-white/20 group-hover:bg-[var(--color-primary)] group-hover:border-[var(--color-primary)] transition-all duration-300 relative z-20 shadow-xl backdrop-blur-md">
                 <ArrowUpRightIcon size={20} />
               </div>
@@ -170,7 +174,7 @@ export default function BentoGrid() {
               {/* Fade masks */}
               <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-[#0a0a0f] to-transparent z-10 pointer-events-none"></div>
               <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0a0a0f] via-[#0a0a0f]/80 to-transparent z-10 pointer-events-none flex items-end justify-center pb-3">
-                <span className="text-[var(--color-primary)] font-semibold text-sm drop-shadow-md">Ver todos →</span>
+                <span className="text-[var(--color-primary)] font-semibold text-sm drop-shadow-md">{tHome('ver_todos')}</span>
               </div>
               
               {/* Marquee vertical container */}
@@ -181,6 +185,7 @@ export default function BentoGrid() {
                       src={project.image} 
                       alt={project.title} 
                       fill 
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 blur-[1px] group-hover:blur-0" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
@@ -199,7 +204,7 @@ export default function BentoGrid() {
         <BentoCard className="md:col-span-3 flex flex-col" delay={0.5}>
           <div className="flex items-center gap-3 mb-8 text-[var(--color-primary)]">
             <GithubIcon size={24} />
-            <h3 className="text-xl font-bold text-white">Contribuições no GitHub</h3>
+            <h3 className="text-xl font-bold text-white">{tHome('contribuicoes_github')}</h3>
           </div>
           
           <div className="w-full overflow-x-auto flex justify-center custom-scrollbar pb-4">

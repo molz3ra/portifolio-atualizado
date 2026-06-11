@@ -1,20 +1,34 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useState, useEffect, useTransition } from "react";
 import { motion } from "framer-motion";
 import { TextScramble } from "@/components/ui/text-scramble";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
 
-const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Projetos", href: "/projetos" }
-];
+
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const t = useTranslations("Header");
+  const [isPending, startTransition] = useTransition();
+
+  const navItems = [
+    { name: t("home"), href: "/" },
+    { name: t("projetos"), href: "/projetos" }
+  ];
+
   const [scrolled, setScrolled] = useState(false);
   const [isTrigger, setIsTrigger] = useState(false);
+
+  const toggleLanguage = () => {
+    const nextLocale = locale === 'pt' ? 'en' : 'pt';
+    startTransition(() => {
+      router.replace(pathname, { locale: nextLocale });
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,31 +65,42 @@ export default function Header() {
             Molz3ra Corp.
           </TextScramble>
         </Link>
-        <ul className="flex items-center gap-2 sm:gap-6 bg-black/40 backdrop-blur-sm border border-white/10 px-4 py-2 rounded-full">
-          {navItems.map((item) => {
-            const isActive = pathname === item.href;
-            return (
-              <li key={item.name} className="relative">
-                <Link
-                  href={item.href}
-                  className={`text-sm font-medium transition-colors px-4 py-2 rounded-full block ${
-                    isActive ? "text-black" : "text-[var(--color-secondary-text)] hover:text-white"
-                  }`}
-                >
-                  {isActive && (
-                    <motion.div
-                      layoutId="active-nav-bg"
-                      className="absolute inset-0 bg-[var(--color-primary)] rounded-full -z-10"
-                      initial={false}
-                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                    />
-                  )}
-                  {item.name}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="flex items-center gap-4">
+          <ul className="flex items-center gap-2 sm:gap-6 bg-black/40 backdrop-blur-sm border border-white/10 px-4 py-2 rounded-full">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <li key={item.name} className="relative">
+                  <Link
+                    href={item.href as any}
+                    className={`text-sm font-medium transition-colors px-4 py-2 rounded-full block ${
+                      isActive ? "text-black" : "text-[var(--color-secondary-text)] hover:text-white"
+                    }`}
+                  >
+                    {isActive && (
+                      <motion.div
+                        layoutId="active-nav-bg"
+                        className="absolute inset-0 bg-[var(--color-primary)] rounded-full -z-10"
+                        initial={false}
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                      />
+                    )}
+                    {item.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+
+          <button
+            onClick={toggleLanguage}
+            disabled={isPending}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-black/40 backdrop-blur-sm border border-white/10 text-white/80 hover:text-white hover:bg-white/10 transition-all font-semibold uppercase text-xs disabled:opacity-50"
+            title={locale === 'pt' ? 'Mudar para Inglês' : 'Switch to Portuguese'}
+          >
+            {locale === 'pt' ? 'EN' : 'PT'}
+          </button>
+        </div>
       </nav>
     </header>
   );
