@@ -1,0 +1,367 @@
+{
+  "candidato": {
+    "nome": "Lucas Mol Rodrigues",
+    "localizacao": "Pouso Alegre, MG – Brasil",
+    "contato": {
+      "email": "lucasmolrodrigues2003@gmail.com",
+      "telefone": "+55 (35) 99978-9761",
+      "linkedin": "https://www.linkedin.com/in/mol035/",
+      "github": "https://github.com/molz3ra",
+      "portfolio": "https://portifolio-atualizado-two.vercel.app/pt"
+    }
+  },
+  "areas_profissionais": {
+    "administracao_e_gestao": {
+      "titulo": "Administração, Operações & Gestão Empresarial",
+      "perfis_de_vaga_alvo": [
+        "Assistente / Analista Administrativo",
+        "Analista de Operações / Processos",
+        "Assistente de Gestão de Projetos / PMO",
+        "Analista de Planejamento e Controle",
+        "Consultor Júnior de Negócios / Estratégia"
+      ],
+      "competencias": [
+        {
+          "habilidade": "Governança Corporativa & Accountability",
+          "categoria": "Estratégia e Compliance",
+          "descricao": "Equilíbrio entre interesses de stakeholders, tomada de decisões com responsabilidade ética e gestão de compliance corporativo.",
+          "comprovacao": "Certificação FIAP (Leadership and Corporate Accountability)",
+          "palavras_chave_ats": ["Governança Corporativa", "Stakeholder Management", "Accountability", "Ética Empresarial", "Compliance"]
+        },
+        {
+          "habilidade": "Gestão de Projetos & Metodologias Ágeis",
+          "categoria": "Gestão e Processos",
+          "descricao": "Planejamento de escopo, gerenciamento de cronograma, entregas iterativas com Scrum/Kanban e acompanhamento de marcos de entrega.",
+          "comprovacao": "Gestão autônoma de projetos de software, SaaS e automação de ponta a ponta",
+          "palavras_chave_ats": ["Gestão de Projetos", "Scrum", "Kanban", "Metodologias Ágeis", "Gestão de Escopo", "Cronogramas"]
+        },
+        {
+          "habilidade": "Planejamento e Alocação de Orçamento (Budgeting)",
+          "categoria": "Financeiro e Planejamento",
+          "descricao": "Planejamento e distribuição de verba orçamentária, cálculo e controle de custos de aquisição e previsão financeira de resultados.",
+          "comprovacao": "Cursos de mídia de performance e desenvolvimento da Suite Performance (simulador de ROI/CPA)",
+          "palavras_chave_ats": ["Alocação de Recursos", "Gestão Orçamentária", "ROI", "CPA", "Controle de Custos", "Previsão Orçamentária"]
+        },
+        {
+          "habilidade": "Mapeamento e Automação de Processos",
+          "categoria": "Operações e Produtividade",
+          "descricao": "Identificação de gargalos operacionais, eliminação de retrabalho manual através de scripts e digitalização de fluxos de trabalho.",
+          "comprovacao": "Automações desenvolvidas em Python e fluxos de checkout simplificado",
+          "palavras_chave_ats": ["Mapeamento de Processos", "Otimização de Fluxos", "Automação de Rotinas", "Melhoria Contínua", "Lean"]
+        },
+        {
+          "habilidade": "Elaboração de Relatórios Executivos & Apresentações",
+          "categoria": "Comunicação Empresarial",
+          "descricao": "Consolidação de dados operacionais e financeiros em relatórios executivos para diretoria e clientes, facilitando a tomada de decisão.",
+          "comprovacao": "Projetos AuditFlow (relatórios executivos) e apresentações de resultados",
+          "palavras_chave_ats": ["Relatórios Executivos", "Apresentações Corporativas", "Documentação", "Dashboards Gerenciais"]
+        },
+        {
+          "habilidade": "Gestão e Eficiência Industrial (OEE)",
+          "categoria": "Operações Industriais",
+          "descricao": "Entendimento dos indicadores de manufatura e indústria 4.0: disponibilidade, desempenho e qualidade (Overall Equipment Effectiveness).",
+          "comprovacao": "Projeto OEE Industrial Simulator",
+          "palavras_chave_ats": ["OEE", "Indicadores Industriais", "Eficiência Operacional", "Indústria 4.0", "Gestão de Paradas"]
+        }
+      ]
+    },
+
+    "recursos_humanos_e_lideranca": {
+      "titulo": "Recursos Humanos, Treinamento & Gestão de Pessoas",
+      "perfis_de_vaga_alvo": [
+        "Assistente / Analista de RH (Generalista)",
+        "Analista de Treinamento e Desenvolvimento (T&D)",
+        "Analista de Comunicação Interna e Endomarketing",
+        "Business Partner Júnior / People Ops",
+        "Coordenador / Facilitador de Equipes"
+      ],
+      "competencias": [
+        {
+          "habilidade": "Comunicação de Liderança & Resolução de Conflitos",
+          "categoria": "Comunicação e Relações Humanas",
+          "descricao": "Comunicação estratégica, escuta ativa, mediação de conflitos entre áreas distintas e alinhamento de expectativas entre liderança e liderados.",
+          "comprovacao": "Certificação FIAP (Leadership Communication)",
+          "palavras_chave_ats": ["Comunicação Assertiva", "Resolução de Conflitos", "Escuta Ativa", "Mediação", "Liderança", "Engajamento"]
+        },
+        {
+          "habilidade": "Alinhamento e Articulação Interdepartamental",
+          "categoria": "Relações Interpessoais",
+          "descricao": "Capacidade de traduzir termos técnicos complexos para linguagem acessível de negócios e articular demandas entre times técnicos, operacionais e comerciais.",
+          "comprovacao": "Experiência de interface direta com clientes e equipes multidisciplinares",
+          "palavras_chave_ats": ["Interface Interdepartamental", "Comunicação Organizacional", "Alinhamento Estratégico", "Gestão de Stakeholders"]
+        },
+        {
+          "habilidade": "Elaboração de Materiais de Treinamento & Onboarding",
+          "categoria": "Treinamento & Desenvolvimento",
+          "descricao": "Criação de manuais operacionais claros, tutoriais passo a passo, guias visuais e facilitação do aprendizado de novos sistemas ou processos.",
+          "comprovacao": "Documentações de projetos e criação de layouts didáticos com ferramentas visuais",
+          "palavras_chave_ats": ["T&D", "Treinamento e Desenvolvimento", "Onboarding", "Manuais de Treinamento", "Capacitação"]
+        },
+        {
+          "habilidade": "Inteligência Emocional e Ética nas Relações",
+          "categoria": "Cultura e Clima Organizacional",
+          "descricao": "Postura profissional ética, respeito à diversidade, colaboração em equipe e promoção de um ambiente de trabalho transparente e seguro psicologicamente.",
+          "comprovacao": "Formação de Liderança e Governança pela FIAP",
+          "palavras_chave_ats": ["Inteligência Emocional", "Cultura Organizacional", "Clima Organizacional", "Ética", "Trabalho em Equipe"]
+        }
+      ]
+    },
+
+    "marketing_growth_e_comercial": {
+      "titulo": "Marketing Digital, Growth Hacking & Vendas",
+      "perfis_de_vaga_alvo": [
+        "Analista de Marketing Digital / Mídia Paga (Traffic Manager)",
+        "Analista de Growth Hacking / CRO",
+        "Analista de E-commerce / Performance",
+        "Inside Sales / Pré-Vendas / SDR",
+        "Analista de Operações Comerciais (RevOps)"
+      ],
+      "competencias": [
+        {
+          "habilidade": "Gestão de Tráfego Pago & Mídia de Performance",
+          "categoria": "Mídia Paga",
+          "descricao": "Criação, segmentação, gerenciamento e otimização de campanhas de anúncios com foco em conversão e ROI.",
+          "comprovacao": "Certificações Alura em Google Ads, Meta Ads (Facebook/Instagram), LinkedIn Ads, TikTok Ads e Twitter/X Ads",
+          "palavras_chave_ats": ["Tráfego Pago", "Google Ads", "Meta Ads", "LinkedIn Ads", "TikTok Ads", "Gestão de Tráfego", "Campanhas Digitais"]
+        },
+        {
+          "habilidade": "Growth Hacking & Metodologias de Experimentação",
+          "categoria": "Crescimento & Escala",
+          "descricao": "Implementação de frameworks de experimentação rápida, testes A/B de hipóteses, otimização de funil de vendas e redução de churn.",
+          "comprovacao": "Certificação Alura (Growth Hacking) e plataforma Suite Performance",
+          "palavras_chave_ats": ["Growth Hacking", "Testes A/B", "Funil de Vendas", "Experimentação", "Aquisição", "Retenção"]
+        },
+        {
+          "habilidade": "Otimização de Taxa de Conversão (CRO)",
+          "categoria": "E-commerce & Vendas",
+          "descricao": "Auditoria de páginas de pouso (Landing Pages), análise de fricção no checkout, posicionamento de chamadas para ação (CTAs) e usabilidade focada em vendas.",
+          "comprovacao": "Desenvolvimento do motor de auditoria CRO na plataforma Suite Performance",
+          "palavras_chave_ats": ["CRO", "Conversão de Vendas", "Auditoria de Landing Pages", "Call to Action", "Experiência de Compra"]
+        },
+        {
+          "habilidade": "Rastreamento Avançado & Web Analytics",
+          "categoria": "Mensuração de Dados",
+          "descricao": "Configuração e auditoria técnica de Pixels de conversão (Meta/Google), eventos de navegação, UTMs e métricas de atribuição.",
+          "comprovacao": "Sistemas de auditoria de scripts de rastreamento integrados nos projetos",
+          "palavras_chave_ats": ["Pixel Meta", "Google Analytics", "GTM", "Rastreamento de Conversões", "Métricas de Performance", "UTMs"]
+        },
+        {
+          "habilidade": "Estratégias de Vendas Diretas & Social Commerce",
+          "categoria": "Comercial e Vendas",
+          "descricao": "Criação de fluxos de fechamento de negócios sem fricção utilizando WhatsApp comercial, nutrição de leads e abordagens B2B corporativas.",
+          "comprovacao": "Plataforma FarmFresh Connect 2.0 (vendas direto via WhatsApp) e captação B2B",
+          "palavras_chave_ats": ["Social Commerce", "Vendas via WhatsApp", "Inside Sales", "Geração de Leads", "Prospecção B2B"]
+        }
+      ]
+    },
+
+    "design_audiovisual_e_comunicacao": {
+      "titulo": "Design Gráfico, UI/UX & Comunicação Visual",
+      "perfis_de_vaga_alvo": [
+        "Designer Gráfico / Diretor de Arte Júnior",
+        "UI/UX Designer",
+        "Web Designer",
+        "Designer de Conteúdo / Social Media Designer",
+        "Desenhista Técnico / Operador CAD"
+      ],
+      "competencias": [
+        {
+          "habilidade": "Adobe Creative Cloud (Photoshop, Illustrator, InDesign)",
+          "categoria": "Design e Criação",
+          "descricao": "Criação de peças gráficas completas: tratamento profissional de imagens (Photoshop), ilustração vetorial e criação de logos (Illustrator), diagramação e editoração para impressão ou digital (InDesign).",
+          "comprovacao": "Cursos de Design Gráfico pela FIAP e Udemy (+30h)",
+          "palavras_chave_ats": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Design Gráfico", "Vetorização", "Diagramação"]
+        },
+        {
+          "habilidade": "UI/UX Design & Prototipagem no Figma",
+          "categoria": "Design de Produto Digital",
+          "descricao": "Construção de wireframes, fluxos de usuário, protótipos de alta fidelidade navegáveis e manutenção de Design Systems com componentes reutilizáveis.",
+          "comprovacao": "Curso PRO FIGMA e design de interfaces dos projetos de portfólio",
+          "palavras_chave_ats": ["Figma", "UI Design", "UX Design", "Wireframes", "Prototipagem", "Design System", "User Flow"]
+        },
+        {
+          "habilidade": "Branding & Identidade Visual",
+          "categoria": "Marca e Criação",
+          "descricao": "Desenvolvimento de guia de estilos da marca, aplicação de psicologia das cores, escolha de tipografia harmoniosa e criação de manuais de identidade.",
+          "comprovacao": "Criação de identidades visuais completas nos projetos MAD LAB e FarmFresh",
+          "palavras_chave_ats": ["Branding", "Identidade Visual", "Teoria das Cores", "Tipografia", "Manual de Marca"]
+        },
+        {
+          "habilidade": "Desenho Técnico & Modelagem (AutoCAD)",
+          "categoria": "Design Técnico & Engenharia",
+          "descricao": "Leitura e elaboração de plantas, projetos em 2D/3D, desenho técnico de precisão e modelagem vetorial técnica.",
+          "comprovacao": "Certificação e competência de Especialista em AUTOCAD",
+          "palavras_chave_ats": ["AutoCAD", "Desenho Técnico", "Projetos 2D/3D", "Plantas", "Modelagem Técnica"]
+        },
+        {
+          "habilidade": "Criação Ágil de Conteúdo Visual (Canva)",
+          "categoria": "Marketing Visual",
+          "descricao": "Produção rápida de peças para redes sociais, banners promocionais, apresentações e material de apoio institucional.",
+          "comprovacao": "Competência ativa no perfil e aplicação prática em redes sociais",
+          "palavras_chave_ats": ["Canva", "Social Media", "Banners", "Apresentações Visuais"]
+        }
+      ]
+    },
+
+    "analise_de_dados_e_bi": {
+      "titulo": "Análise de Dados, BI & Inteligência Quantitativa",
+      "perfis_de_vaga_alvo": [
+        "Analista de Business Intelligence (BI)",
+        "Analista de Dados Júnior",
+        "Analista de Métricas / Performance",
+        "Assistente de Planejamento Financeiro / Quant",
+        "Analista de MIS / Controladoria"
+      ],
+      "competencias": [
+        {
+          "habilidade": "Power BI & Dashboards Interativos",
+          "categoria": "Visualização de Dados",
+          "descricao": "Modelagem de dados, criação de medidas e indicadores gerenciais, relatórios visuais com filtros dinâmicos para suporte à tomada de decisão.",
+          "comprovacao": "Dashboards estratégicos desenvolvidos em projetos profissionais",
+          "palavras_chave_ats": ["Power BI", "Dashboards", "Visualização de Dados", "KPIs", "Modelagem de Dados", "Relatórios Gerenciais"]
+        },
+        {
+          "habilidade": "Manipulação e Limpeza de Dados com Python (Pandas)",
+          "categoria": "Engenharia de Dados & Análise",
+          "descricao": "Extração de dados via APIs, limpeza de bases desestruturadas, tratamento de valores nulos e análise estatística descritiva.",
+          "comprovacao": "Pipeline de dados do projeto SynapseQuant / EigenTrade",
+          "palavras_chave_ats": ["Python", "Pandas", "ETL", "Tratamento de Dados", "Análise Estatística", "Data Cleaning"]
+        },
+        {
+          "habilidade": "Modelagem Quantitativa & Machine Learning Aplicado",
+          "categoria": "Inteligência Preditiva",
+          "descricao": "Construção de modelos de aprendizado de máquina (XGBoost), engenharia de variáveis preditivas e testes estatísticos de hipóteses.",
+          "comprovacao": "Projeto SynapseQuant com modelagem preditiva e backtesting",
+          "palavras_chave_ats": ["Machine Learning", "XGBoost", "Modelos Preditivos", "Backtesting", "Análise Quantitativa"]
+        },
+        {
+          "habilidade": "Consultas em Bancos de Dados Relacionais (SQL)",
+          "categoria": "Banco de Dados",
+          "descricao": "Escrita de consultas estruturadas (SELECT, JOINs, agregações, filtros complexos) em PostgreSQL e MySQL para extração de relatórios.",
+          "comprovacao": "Aplicações comerciais e cursos acadêmicos na FIAP",
+          "palavras_chave_ats": ["SQL", "PostgreSQL", "MySQL", "Queries", "Consultas a Bancos de Dados", "JOINs"]
+        }
+      ]
+    },
+
+    "tecnologia_e_desenvolvimento": {
+      "titulo": "Tecnologia, Engenharia de Software & Web",
+      "perfis_de_vaga_alvo": [
+        "Desenvolvedor Full Stack Júnior / Pleno",
+        "Desenvolvedor Front-end (React / Next.js)",
+        "Desenvolvedor Back-end (Node.js / Python / Java)",
+        "Analista de Sistemas / Suporte Técnico Nível 2/3",
+        "Desenvolvedor de Automação & Web Scraping"
+      ],
+      "competencias": [
+        {
+          "habilidade": "Desenvolvimento Front-end Moderno",
+          "categoria": "Frontend",
+          "descricao": "Construção de SPAs e aplicações com SSR/SSG usando React, Next.js, TypeScript, Tailwind CSS, animações com Framer Motion e componentização limpa.",
+          "comprovacao": "E-commerces, marketplaces e dashboards no portfólio",
+          "palavras_chave_ats": ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3", "Framer Motion", "SSR"]
+        },
+        {
+          "habilidade": "Desenvolvimento Back-end & Microsserviços com Java & Python",
+          "categoria": "Backend",
+          "descricao": "Desenvolvimento de APIs RESTful resilientes, microsserviços em FastAPI (Python), Node.js (Express) e Java 17 LTS (Spring Boot, POO profunda, Streams API, tratamento de concorrência e precisão monetária com BigDecimal).",
+          "comprovacao": "Nano Course FIAP Java Development (60h - Out/2026), Curso Java/Spring Boot (54h - Udemy), Projetos GripVid e OEE Simulator",
+          "palavras_chave_ats": ["Java 17", "Spring Boot", "POO", "Streams API", "Node.js", "Python", "FastAPI", "APIs RESTful", "Microsserviços", "Clean Code"]
+        },
+        {
+          "habilidade": "Bancos de Dados NoSQL & Persistência Poliglota",
+          "categoria": "Bancos de Dados & Arquitetura",
+          "descricao": "Domínio das 4 famílias NoSQL: Documentos (MongoDB, BSON, MQL, Atlas, Compass, Cosmos DB), Wide Column (Apache Cassandra, CQL, Gossip, Memtable/SSTable), Chave-Valor (Redis em memória, TTL, RDB/AOF) e Grafos (Neo4j, Cypher, Graph Data Science). Aplicação de Teorema CAP, ACID vs. BASE e Persistência Poliglota.",
+          "comprovacao": "Nano Course FIAP NoSQL (40h - Out/2026, Chave: 7EE0750D62DD9602A7955D1960A49B6B)",
+          "palavras_chave_ats": ["NoSQL", "MongoDB", "Cassandra", "Redis", "Neo4j", "Cypher", "Bancos Não-Relacionais", "Teorema CAP", "Persistência Poliglota", "MQL", "CQL"]
+        },
+        {
+          "habilidade": "Web Scraping & Engenharia Reversa Básica",
+          "categoria": "Automação Técnica",
+          "descricao": "Extração de dados estruturados da web, bypass de travas anti-bot, manipulação de headers/user-agents e extração de mídias com yt-dlp e Cheerio.",
+          "comprovacao": "Projetos GripVid e Suite Performance",
+          "palavras_chave_ats": ["Web Scraping", "Cheerio", "yt-dlp", "Automação", "Extração de Dados"]
+        },
+        {
+          "habilidade": "Cloud Computing & Infraestrutura Básica (AWS)",
+          "categoria": "Cloud & DevOps",
+          "descricao": "Provisionamento e configuração de servidores virtuais (EC2, LightSail), armazenamento de arquivos (S3), bancos em nuvem (RDS) e gestão de acessos (IAM).",
+          "comprovacao": "Certificação AWS Cloud Foundations pela Udemy",
+          "palavras_chave_ats": ["AWS", "Amazon EC2", "Amazon S3", "Amazon RDS", "IAM", "Cloud Computing"]
+        },
+        {
+          "habilidade": "Controle de Versão & Boas Práticas (Git/GitHub)",
+          "categoria": "Engenharia de Software",
+          "descricao": "Controle de versão de código em equipe, criação de branches, Pull Requests, documentação técnica (READMEs) e integração contínua.",
+          "comprovacao": "Perfil ativo no GitHub com mais de 6 repositórios estruturados",
+          "palavras_chave_ats": ["Git", "GitHub", "Versionamento", "Pull Requests", "CI/CD Básico"]
+        }
+      ]
+    },
+
+    "seguranca_da_informacao_e_redes": {
+      "titulo": "Cibersegurança, Redes & Governança de TI",
+      "perfis_de_vaga_alvo": [
+        "Assistente / Analista de Segurança da Informação Júnior",
+        "Analista de Suporte e Redes",
+        "Analista de Riscos Tecnológicos e Segurança de Dados"
+      ],
+      "competencias": [
+        {
+          "habilidade": "Segurança Defensiva, Firewall & Hardening",
+          "categoria": "Segurança de Redes",
+          "descricao": "Configuração de regras de proteção de rede, hardening de servidores e aplicação de boas práticas para mitigação de vetores de ataque.",
+          "comprovacao": "Certificação FIAP (Cybersecurity Hacker Skills - 120h)",
+          "palavras_chave_ats": ["Cybersecurity", "Hardening", "Firewall", "Segurança de Redes", "Mitigação de Riscos"]
+        },
+        {
+          "habilidade": "Análise de Riscos & Vulnerabilidades (Pentest Básico)",
+          "categoria": "Auditoria de Segurança",
+          "descricao": "Varredura e identificação de pontos de falha em aplicações web, boas práticas de proteção contra injeções, proteção de rotas e autenticação segura.",
+          "comprovacao": "Treinamento prático de Hacker Skills na FIAP",
+          "palavras_chave_ats": ["Análise de Vulnerabilidades", "Pentest", "Segurança de Aplicações", "OWASP", "Criptografia"]
+        },
+        {
+          "habilidade": "Infraestrutura de Redes e Protocolos",
+          "categoria": "Redes e Telecomunicações",
+          "descricao": "Compreensão de protocolos TCP/IP, DNS, roteamento, redes sem fio (Wireless) e segmentação de rede.",
+          "comprovacao": "Formação de Redes na FIAP",
+          "palavras_chave_ats": ["Redes de Computadores", "TCP/IP", "DNS", "Wireless", "Protocolos de Rede"]
+        }
+      ]
+    },
+
+    "soft_skills_e_comportamentais": {
+      "titulo": "Competências Comportamentais & Habilidades Interpessoais",
+      "perfis_de_vaga_alvo": [
+        "Transversal a todas as áreas"
+      ],
+      "competencias": [
+        {
+          "habilidade": "Capacidade de Aprendizado Rápido & Autodidatismo",
+          "descricao": "Histórico comprovado de rápida assimilação de novas ferramentas, linguagens e metodologias (domínio de tecnologias em meses através de certificações práticas)."
+        },
+        {
+          "habilidade": "Pensamento Crítico & Resolução de Problemas",
+          "descricao": "Habilidade analítica para decompor problemas operacionais ou técnicos complexos em etapas lógicas e implementar soluções viáveis e pragmáticas."
+        },
+        {
+          "habilidade": "Comunicação Clara e Adaptável",
+          "descricao": "Habilidade de se expressar com clareza em formato oral e escrito, adaptando o discurso para clientes, gestores ou pares técnicos."
+        },
+        {
+          "habilidade": "Visão Sistêmica de Negócios",
+          "descricao": "Compreensão de que qualquer projeto (seja um sistema, uma campanha ou uma planilha) deve gerar resultado prático, redução de custos ou aumento de faturamento."
+        },
+        {
+          "habilidade": "Resiliência e Flexibilidade",
+          "descricao": "Capacidade de atuar em ambientes dinâmicos com mudanças de prioridades, mantendo foco na entrega e na qualidade do trabalho final."
+        },
+        {
+          "habilidade": "Organização e Autonomia (Ownership)",
+          "descricao": "Postura proativa de 'dono do projeto', organizando tarefas de forma independente, cumprindo prazos sem necessidade de microgerenciamento."
+        }
+      ]
+    }
+  }
+}

@@ -1,21 +1,36 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
-
-// Dynamically import heavy components
-const BentoGrid = dynamic(() => import("@/components/BentoGrid/BentoGrid"), { ssr: true });
-const Footer = dynamic(() => import("@/components/Footer"), { ssr: true });
+import { useState } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ProjectsShowcase from "@/components/ProjectsShowcase";
+import TechnicalBlueprint from "@/components/TechnicalBlueprint";
+import CertificationsSection from "@/components/CertificationsSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import ContactSection from "@/components/ContactSection";
+import CommandPalette from "@/components/CommandPalette";
 
 export default function Home() {
+  const [isPaletteOpen, setIsPaletteOpen] = useState(false);
+
   return (
     <>
+      <Navbar onOpenCommandPalette={() => setIsPaletteOpen(true)} />
+
       <main className="flex-grow">
-        <Suspense fallback={<div className="h-screen w-full flex items-center justify-center text-[var(--color-primary)]">Loading...</div>}>
-          <BentoGrid />
-        </Suspense>
+        <Hero />
+        <ProjectsShowcase />
+        <TechnicalBlueprint />
+        <CertificationsSection />
+        <ExperienceSection />
+        <ContactSection />
       </main>
-      <Footer />
+
+      <CommandPalette 
+        isOpen={isPaletteOpen} 
+        onClose={() => setIsPaletteOpen(false)} 
+        onToggle={() => setIsPaletteOpen((prev) => !prev)}
+      />
     </>
   );
 }

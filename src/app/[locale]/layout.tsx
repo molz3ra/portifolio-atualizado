@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
-import { Inter, Geist } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { cn } from "@/lib/utils";
 
-const inter = Inter({
-  variable: "--font-inter",
+const geistSans = Geist({
   subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
-  title: "Lucas Mol | Portfólio",
-  description: "Portfólio de Lucas Mol - Desenvolvedor Web",
+  title: "Lucas Mol — Full Stack Engineer & Creative Technologist",
+  description: "Portfólio de Lucas Mol. Engenheiro Full Stack especializado em sistemas web de alta performance, interfaces fluidas e produtos de alta conversão.",
+  authors: [{ name: "Lucas Mol", url: "https://github.com/molz3ra" }],
 };
-
-import ClientBackground from "@/components/ClientBackground";
-import Header from "@/components/Header";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export default async function RootLayout({
   children,
@@ -36,20 +37,19 @@ export default async function RootLayout({
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
-    <html lang={locale} data-scroll-behavior="smooth" className={cn("antialiased", "scroll-smooth", inter.variable, "font-sans", geist.variable)}>
-      <body className="bg-black text-[#e3e2e2] font-sans min-h-screen flex flex-col">
+    <html 
+      lang={locale} 
+      className={cn(
+        "antialiased scroll-smooth dark",
+        geistSans.variable,
+        geistMono.variable
+      )}
+    >
+      <body className="bg-[#08080a] text-[#f4f4f5] font-sans min-h-screen flex flex-col selection:bg-amber-500/20 selection:text-amber-300">
         <NextIntlClientProvider messages={messages}>
-          {/* Mantém o Canvas 3D vivo durante navegações de página (Não será desmontado) */}
-          <ClientBackground />
-          
-          {/* Mantém o Header no nível raiz da aplicação */}
-          <Header />
-          
           {children}
         </NextIntlClientProvider>
       </body>

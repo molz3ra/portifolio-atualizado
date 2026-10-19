@@ -1,0 +1,239 @@
+{
+  "dados_pessoais": {
+    "nome_completo": "Lucas Mol Rodrigues",
+    "titulo_profissional": "Desenvolvedor Full Stack",
+    "subtitulo": "React · Next.js · Node.js · Java",
+    "localizacao": "Pouso Alegre, Minas Gerais, Brasil",
+    "modalidade": ["Remoto", "Híbrido", "Presencial"],
+    "email": "lucasmolrodrigues2003@gmail.com",
+    "telefone": "+55 (35) 999789761",
+    "linkedin": "https://www.linkedin.com/in/mol035/",
+    "github": "https://github.com/molz3ra",
+    "portfolio": "https://portifolio-atualizado-two.vercel.app/pt"
+  },
+  "resumo_profissional": "Desenvolvedor Full Stack com sólida base em Engenharia de Software e visão multidisciplinar de negócios, dados e UI/UX. Atuação prática no ecossistema JavaScript/TypeScript moderno (React, Next.js, Node.js) e em backends robustos com Java (Spring Boot) e Python (FastAPI). Experiência no desenvolvimento de plataformas SaaS com scraping e análise de dados, e-commerces com renderização no servidor (SSR), integrações de APIs em tempo real e arquiteturas orientadas a microsserviços. Formação acadêmica em Sistemas de Informação pela FIAP aliada a certificações técnicas em desenvolvimento, nuvem (AWS), cibersegurança e estratégias de growth e conversão.",
+  "formacao_academica": [
+    {
+      "instituicao": "FIAP - Faculdade de Informática e Administração Paulista",
+      "curso": "Bacharelado em Sistemas de Informação (Computer Systems Technology)",
+      "periodo": "Fev. de 2025 – Dez. de 2028",
+      "status": "Em andamento"
+    }
+  ],
+  "experiencia_profissional": [
+    {
+      "cargo": "Desenvolvedor Full Stack (Freelance)",
+      "empresa": "Freelancer.com / Autônomo",
+      "periodo": "Março de 2025 – Maio de 2026 (1 ano e 3 meses)",
+      "local": "Pouso Alegre, MG · Remoto",
+      "atividades": [
+        "Desenvolvimento full-stack de plataformas web modernas, SaaS e landing pages de alta conversão utilizando Next.js, React, Node.js e Tailwind CSS.",
+        "Criação de scripts de automação, web scraping e pipelines analíticos com Python, além da modelagem de indicadores e dashboards no Power BI.",
+        "Gerenciamento completo do ciclo de desenvolvimento de software: arquitetura, controle de versão com Git/GitHub, Clean Code e otimização de Core Web Vitals.",
+        "Integração de APIs de terceiros, gateways de mensagens (WhatsApp API) e persistência de dados em bancos relacionais e NoSQL."
+      ]
+    }
+  ],
+  "principais_projetos": [
+    {
+      "nome": "Suite Performance",
+      "tipo": "Plataforma SaaS & Diagnóstico CRO",
+      "stack": ["Next.js 15", "TypeScript", "Tailwind CSS v4", "Recharts", "Cheerio", "Axios"],
+      "descricao": "Plataforma SaaS voltada para gestores de tráfego e donos de produtos digitais auditarem Landing Pages em tempo real e simularem projeções financeiras (ROI, CPA, conversão). Possui web scraping para auditoria de CRO, detecção de pixels de rastreamento, análise de botões/CTAs e dashboard interativo com gráficos reativos."
+    },
+    {
+      "nome": "MAD LAB - Premium Streetwear",
+      "tipo": "E-Commerce de Alta Performance",
+      "stack": ["Next.js 16", "React 18+", "Framer Motion", "CSS Modules", "Lucide React"],
+      "descricao": "E-commerce com experiência fluida de aplicativo nativo no navegador. Implementa Server-Side Rendering (SSR) para SEO e alta performance, carrinho interativo slide-over em tempo real, rotas dinâmicas (/produto/[id]) e micro-interações fluidas."
+    },
+    {
+      "nome": "FarmFresh Connect 2.0",
+      "tipo": "Marketplace e Conexão com Produtores Locais",
+      "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Context API", "Sonner"],
+      "descricao": "Plataforma pensada para pequenos produtores rurais e artesanais. Possui vitrine dinâmica, filtros e pesquisa em tempo real, gestão global de estado com Context API e checkout inteligente que envia o pedido já formatado diretamente ao WhatsApp do produtor."
+    },
+    {
+      "nome": "GripVid - Full-Stack Universal Media Downloader",
+      "tipo": "Aplicação Full Stack & Microsserviços",
+      "stack": ["Python", "FastAPI", "Next.js", "Tailwind CSS v4", "FFmpeg", "yt-dlp"],
+      "github": "https://github.com/molz3ra/GripVid",
+      "descricao": "Aplicação em microsserviços para extração e download de mídias de alta qualidade (YouTube, TikTok, Instagram, X). Backend assíncrono em FastAPI, bypass anti-bot, processamento e conversão de áudio/vídeo on-the-fly com FFmpeg e interface moderna com dark mode e validação em tempo real."
+    },
+    {
+      "nome": "AuditFlow",
+      "tipo": "Auditoria Técnica & Lead Magnet",
+      "stack": ["TypeScript", "APIs Core Web Vitals", "Relational DB"],
+      "github": "https://github.com/molz3ra/AuditFlow",
+      "descricao": "Plataforma para monitoramento de performance, SEO e acessibilidade de lojas virtuais com geração automatizada de relatórios executivos em PDF e motor de captura de leads."
+    },
+    {
+      "nome": "SynapseQuant / EigenTrade",
+      "tipo": "Plataforma de Inteligência e Trading Quantitativo",
+      "stack": ["Python", "Pandas", "XGBoost", "Binance API"],
+      "github": "https://github.com/molz3ra/EigenTrade",
+      "descricao": "Sistema de machine learning para predição de movimentos de mercado em criptomoedas. Pipeline de dados consumindo API da Binance, engenharia de atributos (RSI, EMA, Bandas de Bollinger) e motor de backtesting estatístico com métricas de ROI e Drawdown."
+    },
+    {
+      "nome": "OEE Industrial Simulator",
+      "tipo": "Simulador Industrial para Indústria 4.0",
+      "stack": ["Node.js", "TypeScript", "ORM", "Dashboards"],
+      "github": "https://github.com/molz3ra/OEEIndustrialSimulator",
+      "descricao": "Aplicação voltada para monitoramento em tempo real do indicador OEE (Overall Equipment Effectiveness), rastreamento de paradas de máquinas e análise de produtividade fabril."
+    }
+  ],
+  "competencias": {
+    "frontend": [
+      "React.js",
+      "Next.js (App Router, SSR)",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Tailwind CSS (v3/v4)",
+      "HTML5 Semântico",
+      "CSS3 / Flexbox / Grid",
+      "Framer Motion",
+      "Context API",
+      "Design Responsivo & Mobile-First"
+    ],
+    "backend": [
+      "Node.js",
+      "Python (FastAPI)",
+      "Java 17 LTS (Spring Boot, POO, Streams API)",
+      "APIs RESTful",
+      "Arquitetura de Microsserviços & Camadas (Model/Repo/View)",
+      "Web Scraping (Cheerio, yt-dlp)",
+      "FFmpeg Media Processing"
+    ],
+    "bancos_de_dados": [
+      "SQL (PostgreSQL, MySQL)",
+      "JPA / Hibernate",
+      "NoSQL Documentos (MongoDB, MQL, Atlas, Compass, Cosmos DB)",
+      "NoSQL Chave-Valor (Redis, Caching, Estruturas em Memória)",
+      "NoSQL Colunar (Apache Cassandra, CQL, HBase)",
+      "NoSQL Grafos (Neo4j, Cypher, Graph Data Science)",
+      "Polyglot Persistence, Teorema CAP & ACID vs. BASE"
+    ],
+    "nuvem_devops": [
+      "Git / GitHub",
+      "Amazon Web Services (EC2, S3, IAM, RDS, LightSail)",
+      "Vercel",
+      "Linux Basics"
+    ],
+    "design_ux_ui": [
+      "Figma",
+      "UI/UX Design",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe InDesign",
+      "AutoCAD (Desenho Técnico 2D/3D)",
+      "Design System & Acessibilidade (WCAG)"
+    ],
+    "dados_growth": [
+      "Power BI & DAX",
+      "Pandas & Machine Learning (XGBoost)",
+      "Otimização de Conversão (CRO)",
+      "Auditoria Técnica de Páginas",
+      "Google Ads & Meta Ads (Rastreamento de Pixels/GTM)"
+    ]
+  },
+  "certificacoes": [
+    {
+      "instituicao": "FIAP",
+      "nome": "Nano Course de Java Development (60h)",
+      "data": "17/10/2026",
+      "credencial": "F25375288A343033F2CC8971455FFAB2",
+      "link_validacao": "https://on.fiap.com.br/validar-certificado/"
+    },
+    {
+      "instituicao": "FIAP",
+      "nome": "Nano Course de NoSQL (40h)",
+      "data": "17/10/2026",
+      "credencial": "7EE0750D62DD9602A7955D1960A49B6B",
+      "link_validacao": "https://on.fiap.com.br/validar-certificado/"
+    },
+    {
+      "instituicao": "FIAP",
+      "nome": "Responsive Web Development",
+      "data": "Mai/2026",
+      "credencial": "1b95f9dfb148bb4b2366de0a2f5ceef9"
+    },
+    {
+      "instituicao": "FIAP",
+      "nome": "Nano Course de Front End (80h)",
+      "data": "2025/2026"
+    },
+    {
+      "instituicao": "FIAP",
+      "nome": "Cybersecurity Hacker Skills (120h)",
+      "data": "2025/2026"
+    },
+    {
+      "instituicao": "FIAP",
+      "nome": "Leadership Communication",
+      "data": "Mar/2026",
+      "credencial": "a51c689c22953282df70a6a67473f79f"
+    },
+    {
+      "instituicao": "FIAP",
+      "nome": "Leadership and Corporate Accountability",
+      "data": "2025/2026"
+    },
+    {
+      "instituicao": "FIAP",
+      "nome": "Design Gráfico (Illustrator, Photoshop, InDesign)",
+      "data": "2025/2026"
+    },
+    {
+      "instituicao": "Alura",
+      "nome": "HTML e CSS: Classes, posicionamento e Flexbox",
+      "data": "Abr/2026",
+      "credencial": "8b993860-2eb5-4574-a71b-a2d6336b2ecd"
+    },
+    {
+      "instituicao": "Alura",
+      "nome": "Growth Hacking: Crescimento para Negócios Digitais",
+      "data": "Abr/2026",
+      "credencial": "42cb2040-8cd8-40c1-aabf-6b7875317d01"
+    },
+    {
+      "instituicao": "Alura",
+      "nome": "Tráfego Pago: Estratégias e Aplicações (Google, Meta, LinkedIn, TikTok, Twitter)",
+      "data": "Abr/2026",
+      "credencial": "78ad3526-3095-4c8a-8a51-69bb6de22751"
+    },
+    {
+      "instituicao": "Udemy",
+      "nome": "Java e Spring Boot (54h)",
+      "data": "2025/2026",
+      "credencial": "UC-1b98f5ce-63b8-4d63-8fcd-74875b8a0070"
+    },
+    {
+      "instituicao": "Udemy",
+      "nome": "Fundamentos da Amazon Web Services (AWS)",
+      "data": "2025/2026",
+      "credencial": "UC-57b19ef6-43c6-4e26-988e-aef479a178a5"
+    },
+    {
+      "instituicao": "Udemy",
+      "nome": "Design Gráfico Completo (30h)",
+      "data": "2025/2026",
+      "credencial": "UC-5bdda678-5144-4f16-a832-30778eb4ba16"
+    },
+    {
+      "instituicao": "Udemy",
+      "nome": "Algoritmos e Lógica de Programação (+50 exercícios em 5 linguagens)",
+      "data": "2025/2026",
+      "credencial": "UC-a8b86444-230c-49ef-a566-e4e02e8348a5"
+    }
+  ],
+  "idiomas": [
+    {
+      "idioma": "Português",
+      "nivel": "Nativo"
+    },
+    {
+      "idioma": "Inglês",
+      "nivel": "Técnico (leitura avançada de documentações e escrita profissional)"
+    }
+  ]
+}

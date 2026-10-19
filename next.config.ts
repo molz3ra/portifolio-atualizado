@@ -12,11 +12,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    resolveAlias: {
-      "next-intl/config": "./src/i18n/request.ts",
-    },
-  },
+  // Compress assets with gzip/brotli
+  compress: true,
   async headers() {
     return [
       {

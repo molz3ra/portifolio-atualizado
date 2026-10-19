@@ -1,75 +1,104 @@
 {
-  "Header": {
-    "home": "Home",
-    "projetos": "Projetos"
+  "Nav": {
+    "projects": "Projetos",
+    "stack": "Stack & Arquitetura",
+    "certifications": "Certificados",
+    "experience": "Trajetória",
+    "contact": "Contato",
+    "command_hint": "Buscar",
+    "status": "Disponível para projetos"
   },
-  "Home": {
-    "disponivel": "Disponível para Projetos",
-    "role": "Desenvolvedor Full Stack · React · Next.js · Node.js · Java",
-    "description": "Desenvolvo aplicações web completas — do banco de dados ao clique do usuário. Stack principal: React, Next.js, Node.js e Java. Visão de produto, dados e UI/UX em um único perfil. Buscando minha primeira oportunidade formal como Dev Full Stack",
-    "engenharia": "Engenharia de Software",
-    "multidisciplinares": "Habilidades Multidisciplinares",
-    "projetos_destaque": "Projetos em Destaque",
-    "ver_todos": "Ver todos →",
-    "contribuicoes_github": "Contribuições no GitHub",
-    "footer_rights": "Todos os direitos reservados."
+  "Hero": {
+    "badge": "DISPONÍVEL PARA PROJETOS & VAGAS",
+    "headline_prefix": "Desenvolvo sistemas web com ",
+    "headline_highlight": "rigor técnico",
+    "headline_suffix": " e visão multidisciplinar.",
+    "bio": "Profissional graduando em Sistemas de Informação pela FIAP com sólida base em engenharia de software e visão multidisciplinar de produtos, dados e negócios. Do ecossistema React/Next.js/Node.js e backends Java (Spring Boot) e Python (FastAPI) a bancos relacionais e NoSQL, design UI/UX e análise de dados.",
+    "cta_projects": "Explorar Projetos",
+    "cta_contact": "Copiar E-mail",
+    "cta_cmd": "Pressione ⌘K ou clique para comandos",
+    "toast_email_copied": "E-mail copiado para a área de transferência!"
   },
-  "Skills": {
-    "frontend": "💻 Frontend",
-    "backend": "⚙️ Backend",
-    "design": "🎨 Design",
-    "data": "📊 Data & BI",
-    "growth": "🚀 Growth & Marketing",
-    "lideranca": "👥 Liderança & Gestão"
+  "Passport": {
+    "title": "SYSTEM TELEMETRY",
+    "location_label": "Localização",
+    "location_val": "Minas Gerais, Brasil",
+    "timezone_label": "Horário Local (BRT)",
+    "status_label": "Status",
+    "status_val": "Online · Aceitando Desafios",
+    "focus_label": "Foco Técnico",
+    "focus_val": "Full Stack · Next.js 16 · Java · NoSQL · Cloud",
+    "tab_terminal": "Terminal",
+    "tab_metrics": "Métricas",
+    "tab_philosophy": "Filosofia",
+    "terminal_hint": "Digite ou clique nos comandos rápidos abaixo:",
+    "metric_vitals": "100%",
+    "metric_vitals_label": "Core Web Vitals",
+    "metric_fps": "60-120",
+    "metric_fps_label": "FPS em Transições",
+    "metric_arch": "Full-Stack",
+    "metric_arch_label": "Arquitetura Ponta a Ponta",
+    "philosophy_quote": "Software excelente não é apenas o que funciona no backend — é a precisão invisível que faz o usuário sentir que a aplicação responde no exato milissegundo em que ele pensa."
   },
-  "Projetos": {
-    "titulo": "Projetos em",
-    "titulo_destaque": "Destaque",
-    "subtitulo": "Cases reais onde apliquei Engenharia de Software, UI/UX e Estratégias de Growth para resolver problemas complexos.",
-    "features_titulo": "Principais Features",
-    "live_demo": "Live Demo",
-    "repositorio": "Repositório",
-    "projects": {
-      "madlab": {
-        "pitch": "Um e-commerce completo focado em alta performance, UI/UX imersiva e estética Streetwear.",
-        "description": "Desenhado para oferecer a sensação de um aplicativo nativo diretamente no navegador. Conta com gerenciamento de estado complexo para carrinho, Server-Side Rendering (SSR) e micro-interações.",
-        "features": {
-          "f1": "Carrinho Slide-over em tempo real",
-          "f2": "Páginas Dinâmicas (/produto/[id]) via SSR",
-          "f3": "Transições Suaves (Framer Motion)",
-          "f4": "Sistema de Recomendação Visual"
-        }
-      },
-      "suite": {
-        "pitch": "Plataforma SaaS moderna para auditar Landing Pages e projetar resultados financeiros (ROI/CPA).",
-        "description": "Une desenvolvimento Full-stack com inteligência de marketing. Realiza web scraping de URLs para gerar um diagnóstico de CRO em tempo real, além de simular projeções financeiras em um dashboard interativo.",
-        "features": {
-          "f1": "Auditor CRO via Web Scraping (Cheerio)",
-          "f2": "Detecção de Pixel e Análise de CTAs",
-          "f3": "Simulador de ROI e Metas com Recharts",
-          "f4": "Dark Mode & UX Otimizada"
-        }
-      },
-      "farmfresh": {
-        "pitch": "Conectando consumidores aos melhores produtores locais com tecnologia e simplicidade.",
-        "description": "Um marketplace focado em produtores rurais e artesanais. Traz filtros dinâmicos, rotas exclusivas de perfis e a solução de negócios perfeita: checkout integrado diretamente via WhatsApp.",
-        "features": {
-          "f1": "Vitrine Dinâmica e Pesquisa em Tempo Real",
-          "f2": "Perfil Exclusivo para Produtores",
-          "f3": "Gerenciamento Global via React Context",
-          "f4": "Checkout via WhatsApp Integrado"
-        }
-      },
-      "instagram": {
-        "pitch": "Réplica de alta fidelidade da interface e fluxo do Instagram para Web.",
-        "description": "Uma reprodução focada em Pixel Perfect e responsividade mobile-first, estudando a usabilidade da aplicação original para aprimorar a construção de componentes React reutilizáveis.",
-        "features": {
-          "f1": "Feed de Postagens Responsivo",
-          "f2": "Visualização Dinâmica de Stories",
-          "f3": "Sistema de Navegação (Bottom Bar)",
-          "f4": "Pixel Perfect UI"
-        }
-      }
-    }
+  "Projects": {
+    "eyebrow": "TRABALHO SELECIONADO",
+    "title": "Projetos em Destaque",
+    "subtitle": "Sistemas web construídos com foco em performance, arquitetura limpa e experiência do usuário.",
+    "view_live": "Abrir Projeto",
+    "view_code": "Código Fonte",
+    "empty_badge": "EM PREPARAÇÃO · 2026",
+    "empty_title": "Novos Estudos de Caso em Construção",
+    "empty_description": "Estou desenvolvendo e lapidando uma nova safra de projetos autorais e sistemas full stack de alta fidelidade. Em breve uma nova seleção de produtos digitais será publicada aqui com documentação técnica e links ao vivo.",
+    "empty_cta_github": "Acompanhar no GitHub",
+    "empty_cta_contact": "Falar Comigo",
+    "feature_1_title": "Arquitetura Moderna",
+    "feature_1_desc": "Full-Stack com Next.js 16, React 19, TypeScript e componentização modular.",
+    "feature_2_title": "Performance Extrema",
+    "feature_2_desc": "Interfaces fluidas a 60-120 FPS, Core Web Vitals 100% e carregamento instantâneo.",
+    "feature_3_title": "APIs & Resiliência",
+    "feature_3_desc": "Persistência SQL, microsserviços e backend escalável com Node.js e Java."
+  },
+  "Stack": {
+    "eyebrow": "BLUEPRINT TÉCNICO",
+    "title": "Stack & Competências",
+    "subtitle": "Visão técnica abrangente de engenharia de software, persistência poliglota, nuvem e visão de produto.",
+    "github_title": "Atividade no GitHub",
+    "github_subtitle": "Compromisso diário com código, consistência e evolução técnica contínua."
+  },
+  "Certifications": {
+    "eyebrow": "CREDENCIAIS & ESPECIALIZAÇÕES",
+    "title": "Certificados & Cursos Técnicos",
+    "subtitle": "Formação técnica contínua pela FIAP, Udemy e Alura com comprovação de carga horária e códigos de autenticidade.",
+    "filter_all": "Todos",
+    "copied": "Copiado!",
+    "verify_tooltip": "Validar certificado na instituição"
+  },
+  "Experience": {
+    "eyebrow": "TRAJETÓRIA & FORMAÇÃO",
+    "title": "Experiência & Formação",
+    "subtitle": "Minha evolução construindo produtos, estudando engenharia e liderando processos.",
+    "badge_dev": "Desenvolvimento & Engenharia",
+    "badge_edu": "Educação & Certificações"
+  },
+  "Contact": {
+    "eyebrow": "VAMOS CONVERSAR",
+    "title": "Tem um projeto ou oportunidade em mente?",
+    "subtitle": "Estou disponível para contratações full-time, posições remotas ou consultoria técnica para produtos digitais.",
+    "email_btn": "Enviar E-mail Direto",
+    "copy_btn": "Copiar E-mail",
+    "github_btn": "Ver GitHub",
+    "linkedin_btn": "Conectar no LinkedIn",
+    "footer_note": "Construído artesanalmente com Next.js 16, React 19, Tailwind CSS v4 e Framer Motion."
+  },
+  "Palette": {
+    "placeholder": "Digite para pesquisar ações, projetos ou atalhos...",
+    "projects_group": "Projetos",
+    "navigation_group": "Navegação",
+    "actions_group": "Ações Rápidas",
+    "switch_lang": "Mudar para Inglês (EN)",
+    "copy_email": "Copiar endereço de e-mail",
+    "open_github": "Abrir perfil no GitHub",
+    "open_linkedin": "Abrir perfil no LinkedIn",
+    "no_results": "Nenhum resultado encontrado."
   }
 }
