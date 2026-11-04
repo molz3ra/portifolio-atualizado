@@ -16,6 +16,21 @@ export const siteData = {
   }
 };
 
+export interface ProjectPreview {
+  id: string;
+  label: string;
+  labelEn?: string;
+  image: string;
+  description: string;
+  descriptionEn?: string;
+}
+
+export interface ProjectMetric {
+  label: string;
+  labelEn?: string;
+  value: string;
+}
+
 export interface ProjectItem {
   id: string;
   key?: string;
@@ -23,14 +38,162 @@ export interface ProjectItem {
   tag: string;
   category: string;
   year: string;
-  techStack: string[];
+  tagline?: string;
+  taglineEn?: string;
+  description?: string;
+  descriptionEn?: string;
+  statusBadge?: string;
+  statusBadgeEn?: string;
+  featured?: boolean;
   liveUrl?: string;
   repoUrl?: string;
   image?: string;
-  featured?: boolean;
+  previews?: ProjectPreview[];
+  metrics?: ProjectMetric[];
+  highlights?: string[];
+  highlightsEn?: string[];
+  techStack: string[];
 }
 
-export const projectsData: ProjectItem[] = [];
+export const projectsData: ProjectItem[] = [
+  {
+    id: "lda-studio",
+    key: "lda",
+    title: "LDA — Leitura de Arquivos",
+    tag: "IA & RAG Multimodal",
+    category: "Document Intelligence & RAG Studio",
+    year: "2026",
+    tagline: "Plataforma de inteligência documental multimodal, busca híbrida avançada (RRF) e estúdio de recriação com observabilidade em tempo real.",
+    taglineEn: "Multimodal document intelligence platform, advanced hybrid search (RRF), and recreation studio with real-time observability.",
+    description: "Sistema full-stack projetado para superar as limitações de RAGs convencionais. Une parser de layout com coordenadas espaciais de parágrafos em PDFs, busca híbrida densa e esparsa com fusão RRF (k=60), anonimização determinística LGPD, síntese de áudio estilo podcast (Edge-TTS) e estúdio Canvas retrátil.",
+    descriptionEn: "Full-stack platform engineered to transcend conventional RAG limitations. Combines deep layout parsing with spatial bounding boxes in PDFs, dense/sparse hybrid search with RRF fusion (k=60), deterministic LGPD PII redaction, neural podcast audio synthesis, and a retractable Canvas studio.",
+    statusBadge: "LIVE EM PRODUÇÃO",
+    statusBadgeEn: "LIVE IN PRODUCTION",
+    featured: true,
+    liveUrl: "https://frontend-livid-five-qdkpx7nmow.vercel.app/",
+    repoUrl: "https://github.com/molz3ra",
+    image: "/imgs/lda-preview.png",
+    metrics: [
+      { label: "Latência RRF", labelEn: "RRF Latency", value: "< 25ms" },
+      { label: "Precisão Anti-alucinação", labelEn: "Anti-Hallucination", value: "98.8%" },
+      { label: "Fusão Matemática", labelEn: "Mathematical Fusion", value: "RRF k=60" },
+      { label: "Arquitetura", labelEn: "Architecture", value: "Full Stack" },
+    ],
+    highlights: [
+      "Busca Híbrida RRF (BM25 + pgvector)",
+      "Deep Layout Parser com Bounding Boxes no PDF",
+      "Canvas Studio & Redlining Semântico de Minutas",
+      "Tarja Preta LGPD & Audio Overview Integrado"
+    ],
+    highlightsEn: [
+      "Hybrid Search via RRF (BM25 + pgvector)",
+      "Deep Layout Parser with PDF Bounding Boxes",
+      "Canvas Studio & Semantic Diff (Redlining)",
+      "LGPD PII Redaction & Neural Audio Overview"
+    ],
+    previews: [
+      {
+        id: "chat",
+        label: "RAG Studio & Chat",
+        labelEn: "RAG Studio & Chat",
+        image: "/imgs/lda-preview.png",
+        description: "Interface conversacional fluida com streaming, visualização de fontes e telemetria de inferência.",
+        descriptionEn: "Fluid conversational UI with token streaming, citation inspect, and inference telemetry."
+      },
+      {
+        id: "pdf",
+        label: "PDF Grounding & Bounding Boxes",
+        labelEn: "PDF Grounding & Bounding Boxes",
+        image: "/imgs/lda-pdf.png",
+        description: "Visualizador de PDF integrado com coordenadas espaciais e realce automático do parágrafo citado.",
+        descriptionEn: "Integrated PDF reader with spatial coordinates and real-time highlighted paragraphs."
+      },
+      {
+        id: "canvas",
+        label: "Canvas Studio & Redlining",
+        labelEn: "Canvas Studio & Redlining",
+        image: "/imgs/lda-canvas.png",
+        description: "Ambiente retrátil para recriação, edição de documentos e comparação semântica entre versões.",
+        descriptionEn: "Retractable environment for document recreation, editing, and semantic version diffing."
+      }
+    ],
+    techStack: [
+      "Next.js 15",
+      "FastAPI (Python 3.12)",
+      "PostgreSQL 16",
+      "pgvector",
+      "Tailwind CSS",
+      "Playwright MCP",
+      "Strix Security",
+      "TypeScript",
+      "Docker"
+    ]
+  },
+  {
+    id: "madlab",
+    key: "madlab",
+    title: "MAD LAB — Streetwear",
+    tag: "E-Commerce",
+    category: "Premium Streetwear Platform",
+    year: "2026",
+    tagline: "E-commerce completo focado em alta performance, UI/UX imersiva e estética Streetwear.",
+    taglineEn: "High-performance e-commerce focused on immersive UI/UX and contemporary streetwear aesthetics.",
+    description: "Desenhado para oferecer a sensação de um aplicativo nativo diretamente no navegador. Conta com gerenciamento de estado complexo para carrinho, Server-Side Rendering (SSR) e micro-interações fluidas a 60 FPS.",
+    descriptionEn: "Engineered to deliver an app-like feel in the browser. Features complex cart state management, SSR dynamic routes, and silky 60 FPS micro-interactions.",
+    statusBadge: "PRODUTO NO AR",
+    statusBadgeEn: "LIVE DEMO",
+    featured: false,
+    liveUrl: "https://lojavirtual-nu.vercel.app",
+    repoUrl: "https://github.com/molz3ra/Loja-Virtual",
+    image: "/imgs/madlab.webp",
+    metrics: [
+      { label: "FPS em Transições", labelEn: "Transition FPS", value: "60-120" },
+      { label: "Core Web Vitals", labelEn: "Core Web Vitals", value: "100%" },
+    ],
+    highlights: [
+      "Carrinho Slide-over em tempo real",
+      "Rotas Dinâmicas com SSR",
+      "Micro-interações com Framer Motion"
+    ],
+    highlightsEn: [
+      "Real-time slide-over cart",
+      "Dynamic routes with SSR",
+      "Fluid micro-interactions with Framer Motion"
+    ],
+    techStack: ["Next.js 16", "React 19", "Framer Motion", "Tailwind CSS", "TypeScript"]
+  },
+  {
+    id: "suite-performance",
+    key: "suite",
+    title: "Suite Performance",
+    tag: "SaaS & Growth",
+    category: "Auditor CRO & Projeções de ROI",
+    year: "2025/2026",
+    tagline: "Plataforma SaaS para auditar Landing Pages e simular projeções de conversão (ROI/CPA).",
+    taglineEn: "SaaS platform to audit landing pages and model financial conversion scenarios (ROI/CPA).",
+    description: "Une engenharia de software com inteligência de marketing digital. Realiza web scraping analítico para gerar diagnósticos de CRO instantâneos e projeções financeiras em um dashboard interativo.",
+    descriptionEn: "Bridges software engineering with growth marketing intelligence. Executes analytical web scraping for instant CRO audits and dynamic ROI/CPA projections.",
+    statusBadge: "SISTEMA SAAS",
+    statusBadgeEn: "SAAS PLATFORM",
+    featured: false,
+    image: "/imgs/suiteperformance.png",
+    metrics: [
+      { label: "Auditoria CRO", labelEn: "CRO Audit", value: "Automática" },
+      { label: "Scraping", labelEn: "Web Scraping", value: "Cheerio" },
+    ],
+    highlights: [
+      "Auditor CRO via Web Scraping",
+      "Simulador Interativo de Retorno de Mídia",
+      "Gráficos Reativos com Recharts"
+    ],
+    highlightsEn: [
+      "CRO auditor powered by web scraping",
+      "Interactive media ROI simulator",
+      "Reactive data visualizations with Recharts"
+    ],
+    techStack: ["React", "Node.js", "Cheerio", "Tailwind CSS", "Recharts"]
+  }
+];
 
 export interface CertificationItem {
   id: string;
