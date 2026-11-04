@@ -334,7 +334,7 @@ export default function ProjectsShowcase() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className={secondaryProjects.length === 1 ? "grid grid-cols-1" : "grid grid-cols-1 md:grid-cols-2 gap-8"}>
               {secondaryProjects.map((project, idx) => (
                 <motion.div
                   key={project.id}
@@ -342,16 +342,22 @@ export default function ProjectsShowcase() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  className="rounded-3xl glass-panel glass-panel-hover border border-white/[0.09] overflow-hidden flex flex-col justify-between group"
+                  className={`rounded-3xl glass-panel glass-panel-hover border border-white/[0.09] overflow-hidden group ${
+                    secondaryProjects.length === 1 ? "grid grid-cols-1 lg:grid-cols-12" : "flex flex-col justify-between"
+                  }`}
                 >
                   {/* Card Visual Preview */}
-                  <div className="relative aspect-[16/9] overflow-hidden bg-zinc-950/80 border-b border-white/[0.08]">
+                  <div className={`relative overflow-hidden bg-zinc-950/80 ${
+                    secondaryProjects.length === 1 
+                      ? "lg:col-span-5 min-h-[280px] lg:min-h-full border-b lg:border-b-0 lg:border-r border-white/[0.08]" 
+                      : "aspect-[16/9] border-b border-white/[0.08]"
+                  }`}>
                     {project.image && (
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        sizes={secondaryProjects.length === 1 ? "(max-width: 1024px) 100vw, 40vw" : "(max-width: 768px) 100vw, 50vw"}
                         className="object-cover object-top transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                       />
                     )}
@@ -370,7 +376,9 @@ export default function ProjectsShowcase() {
                   </div>
 
                   {/* Card Body */}
-                  <div className="p-6 sm:p-8 flex flex-col justify-between flex-1">
+                  <div className={`p-6 sm:p-8 flex flex-col justify-between ${
+                    secondaryProjects.length === 1 ? "lg:col-span-7 flex-1" : "flex-1"
+                  }`}>
                     <div>
                       <h4 className="font-display text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">
                         {project.title}
@@ -384,11 +392,25 @@ export default function ProjectsShowcase() {
                         {locale === "en" && project.descriptionEn ? project.descriptionEn : project.description}
                       </p>
 
+                      {/* Metrics if present */}
+                      {project.metrics && (
+                        <div className="flex flex-wrap gap-3 mb-6">
+                          {project.metrics.map((m, i) => (
+                            <div key={i} className="px-3 py-1.5 rounded-lg bg-white/[0.03] border border-white/[0.06]">
+                              <span className="text-xs font-bold text-white font-display mr-2">{m.value}</span>
+                              <span className="text-[10px] font-mono text-zinc-400">
+                                {locale === "en" && m.labelEn ? m.labelEn : m.label}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
                       {/* Highlights */}
                       <ul className="space-y-1.5 mb-6">
                         {((locale === "en" && project.highlightsEn ? project.highlightsEn : project.highlights) || []).map((hl, i) => (
                           <li key={i} className="flex items-center gap-2 text-xs text-zinc-400 font-light">
-                            <span className="w-1.5 h-1.5 rounded-full bg-amber-400/80" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-400/80 shrink-0" />
                             <span>{hl}</span>
                           </li>
                         ))}

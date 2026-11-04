@@ -161,37 +161,6 @@ export const projectsData: ProjectItem[] = [
       "Fluid micro-interactions with Framer Motion"
     ],
     techStack: ["Next.js 16", "React 19", "Framer Motion", "Tailwind CSS", "TypeScript"]
-  },
-  {
-    id: "suite-performance",
-    key: "suite",
-    title: "Suite Performance",
-    tag: "SaaS & Growth",
-    category: "Auditor CRO & Projeções de ROI",
-    year: "2025/2026",
-    tagline: "Plataforma SaaS para auditar Landing Pages e simular projeções de conversão (ROI/CPA).",
-    taglineEn: "SaaS platform to audit landing pages and model financial conversion scenarios (ROI/CPA).",
-    description: "Une engenharia de software com inteligência de marketing digital. Realiza web scraping analítico para gerar diagnósticos de CRO instantâneos e projeções financeiras em um dashboard interativo.",
-    descriptionEn: "Bridges software engineering with growth marketing intelligence. Executes analytical web scraping for instant CRO audits and dynamic ROI/CPA projections.",
-    statusBadge: "SISTEMA SAAS",
-    statusBadgeEn: "SAAS PLATFORM",
-    featured: false,
-    image: "/imgs/suiteperformance.png",
-    metrics: [
-      { label: "Auditoria CRO", labelEn: "CRO Audit", value: "Automática" },
-      { label: "Scraping", labelEn: "Web Scraping", value: "Cheerio" },
-    ],
-    highlights: [
-      "Auditor CRO via Web Scraping",
-      "Simulador Interativo de Retorno de Mídia",
-      "Gráficos Reativos com Recharts"
-    ],
-    highlightsEn: [
-      "CRO auditor powered by web scraping",
-      "Interactive media ROI simulator",
-      "Reactive data visualizations with Recharts"
-    ],
-    techStack: ["React", "Node.js", "Cheerio", "Tailwind CSS", "Recharts"]
   }
 ];
 
