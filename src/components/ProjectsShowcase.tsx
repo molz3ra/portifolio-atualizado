@@ -362,10 +362,16 @@ export default function ProjectsShowcase() {
                       />
                     )}
 
-                    <div className="absolute top-4 left-4 flex items-center gap-2">
+                    <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2">
                       <span className="px-3 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md border border-white/[0.1] text-[11px] font-mono text-amber-300">
                         {project.tag}
                       </span>
+                      {project.statusBadge && (
+                        <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] font-mono text-emerald-400 backdrop-blur-md">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                          <span>{locale === "en" ? (project.statusBadgeEn || project.statusBadge) : project.statusBadge}</span>
+                        </span>
+                      )}
                     </div>
 
                     <div className="absolute top-4 right-4">

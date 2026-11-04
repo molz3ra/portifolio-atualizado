@@ -130,6 +130,52 @@ export const projectsData: ProjectItem[] = [
     ]
   },
   {
+    id: "objection-lab",
+    key: "objectionlab",
+    title: "ObjectionLab",
+    tag: "IA Multi-Agente & CRO",
+    category: "Synthetic Focus Group & Friction Auditor",
+    year: "2026",
+    tagline: "Simulador de Focus Group Sintético com personas concorrentes e auditor de fricção psicológica para Landing Pages.",
+    taglineEn: "Synthetic Focus Group simulator with concurrent personas and psychological friction auditor for Landing Pages.",
+    description: "Plataforma de inteligência para CRO e Growth que submete propostas de valor a 4 personas sintéticas altamente céticas antes do tráfego pago. Executa pipeline concorrente em paralelo (Promise.all), radar de 5 eixos em Recharts, suporte BYOK com chave gratuita no LocalStorage e agente consolidador com reescrita Antes vs. Depois.",
+    descriptionEn: "Growth & CRO intelligence platform subjecting value propositions to 4 highly skeptical synthetic personas before ad spend. Features concurrent parallel execution (Promise.all), 5-axis Recharts radar, BYOK support with LocalStorage persistence, and a lead growth agent with Before vs. After copy rewrites.",
+    statusBadge: "LIVE EM PRODUÇÃO",
+    statusBadgeEn: "LIVE IN PRODUCTION",
+    featured: false,
+    liveUrl: "https://o-lab-two.vercel.app/",
+    repoUrl: "https://github.com/molz3ra/OLab",
+    image: "/imgs/objectionlab.png",
+    metrics: [
+      { label: "Execução", labelEn: "Execution", value: "Multi-Agente" },
+      { label: "Pipeline", labelEn: "Pipeline", value: "Promise.all" },
+      { label: "Validação", labelEn: "Validation", value: "Zod Strict" },
+      { label: "Radar CRO", labelEn: "CRO Radar", value: "Recharts" },
+    ],
+    highlights: [
+      "Orquestração Concorrente de 4 Personas Sintéticas",
+      "Radar de Fricção de 5 Eixos e Veredito Executivo",
+      "Reescrita de Copy Antes vs. Depois sem enrolação",
+      "Suporte Nativo a BYOK (Gemini API no LocalStorage)"
+    ],
+    highlightsEn: [
+      "Concurrent orchestration of 4 synthetic personas",
+      "5-axis friction radar and executive verdict",
+      "Before vs. After no-fluff copy rewrite",
+      "Native BYOK support (Gemini API in LocalStorage)"
+    ],
+    techStack: [
+      "Next.js 16",
+      "TypeScript 5",
+      "Vercel AI SDK",
+      "Gemini 2.5 Flash",
+      "Zod",
+      "Tailwind CSS v4",
+      "Recharts",
+      "Cheerio"
+    ]
+  },
+  {
     id: "madlab",
     key: "madlab",
     title: "MAD LAB — Streetwear",
